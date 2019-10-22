@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "S.M. Raihanul Alam"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/myimg.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **undergrad student** of **Computer Science and Engineering** department at **Bangladesh University of Engineering and Technology**. "
   location         : "Dr.M.A. Rashid Hall, BUET"
   email            : "1505010.smra@ugrad.cse.buet.ac.bd"
@@ -207,7 +207,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Dhaka # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -274,6 +274,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
