@@ -269,7 +269,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: portfolio
+      type: about
     values:
       #layout: single
       author_profile: true
