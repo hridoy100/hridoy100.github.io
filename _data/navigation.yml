@@ -12,8 +12,8 @@ main:
     url: /blog/
   - title: "Bio/CV"
     url: /bio-cv/
-  - title: "Contact"
-    url: https://facebook.com/hridoy100
+  # - title: "Contact"
+  #   url: https://facebook.com/hridoy100
   - title: "About"
     url: /about/
   - title: "Machine Learning"
