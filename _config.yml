@@ -95,7 +95,10 @@ og_image                 : # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links                  : "https://facebook.com/hridoy100" # An array of links to social media profiles
+  links                  : 
+                        - "https://facebook.com/hridoy100"
+                        - "https://www.linkedin.com/in/raihanul-alam-861394187/"
+                        - "https://github.com/hridoy100" # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -118,13 +121,16 @@ author:
       url: mailto:1505010.smra@ugrad.cse.buet.ac.bd
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://hridoy100.github.io"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/hridoy100"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hridoy100"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://www.linkedin.com/in/raihanul-alam-861394187/"
 
 # Site Footer
 footer:
@@ -135,6 +141,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hridoy100"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://www.linkedin.com/in/raihanul-alam-861394187/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -269,11 +278,19 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: home
+      type: posts
     values:
-      layout: home
+      layout: single
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
+    
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
