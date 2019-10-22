@@ -269,9 +269,9 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: about
+      type: home
     values:
-      #layout: single
+      layout: home
       author_profile: true
       read_time: true
       comments: true
