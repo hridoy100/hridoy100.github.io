@@ -271,7 +271,10 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: splash
+      classes:
+        - landing
+        - dark-theme
       author_profile: true
       read_time: true
       comments: true
