@@ -16,6 +16,8 @@ main:
     url: https://facebook.com/hridoy100
   - title: "About"
     url: /about/
+  - title: "Machine Learning"
+    url: /machine-learning/
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
