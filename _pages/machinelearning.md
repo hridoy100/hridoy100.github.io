@@ -4,7 +4,7 @@ permlink: /machine-learning/
 title: "Machine Learning Posts by Tags"
 author_profile: true
 header:
-	image: "/assests/images/bio-photo.jpg"
+	<!-- image: "/assests/images/bio-photo.jpg" -->
 ---
 <!-- 
 {% include base_path %}
