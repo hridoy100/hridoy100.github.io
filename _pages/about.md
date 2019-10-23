@@ -6,4 +6,4 @@ header:
   image: /assets/images/bio-photo.jpg
 ---
 
-I am an undergrad **student** of **Computer Science and Engineering** department at **Bangladesh University of Engineering and Technology**.
+I am an undergrad **student** of [Computer Science and Engineering](https://cse.buet.ac.bd/ "CSE") department at [Bangladesh University of Engineering and Technology](https://www.buet.ac.bd/web/ "BUET").
