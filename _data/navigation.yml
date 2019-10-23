@@ -14,8 +14,8 @@ main:
     url: /achievements/
   - title: "Personal Blog"
     url: /blog/
-  - title: "Bio/CV"
-    url: /bio-cv/
+  - title: "CV"
+    url: /cv/
   - title: "Sample Pages"
     url: /sample-page/
 
