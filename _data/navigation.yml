@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "About"  
-    url: /about/
   - title: "Home"
     url: https://hridoy100.github.io
+  - title: "About"  
+    url: /about/
   - title: "Publications"
     url: /publications/
   - title: "Machine Learning"
