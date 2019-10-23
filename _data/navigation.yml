@@ -6,8 +6,8 @@ main:
     url: /about/
   - title: "Publications"
     url: /publications/
-  - title: "Machine Learning"
-    url: /machine-learning/
+  - title: "Projects"
+    url: /projects/
   - title: "Research"
     url: /research/
   - title: "Achievements"
