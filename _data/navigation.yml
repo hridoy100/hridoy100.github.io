@@ -16,6 +16,8 @@ main:
     url: /blog/
   - title: "Bio/CV"
     url: /bio-cv/
+  - title: "Sample Pages"
+    url: /sample-page/
   # - title: "Contact"
   #   url: https://facebook.com/hridoy100
     
