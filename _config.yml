@@ -114,7 +114,7 @@ author:
   avatar           : "/assets/images/myimg.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an undergrad **student** of **Computer Science and Engineering** department at **Bangladesh University of Engineering and Technology**. "
   location         : "Dr.M.A. Rashid Hall, BUET"
-  email            : "1505010.smra@ugrad.cse.buet.ac.bd"
+  email            : #"1505010.smra@ugrad.cse.buet.ac.bd"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -129,7 +129,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hridoy100"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-square"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/raihanul-alam-861394187/"
 
 # Site Footer
