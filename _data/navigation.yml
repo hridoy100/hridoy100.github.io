@@ -4,6 +4,10 @@ main:
     url: https://hridoy100.github.io
   - title: "Publications"
     url: /publications/
+  - title: "About"  
+    url: /about/
+  - title: "Machine Learning"
+    url: /machine-learning/
   - title: "Research"
     url: /research/
   - title: "Achievements"
@@ -14,10 +18,6 @@ main:
     url: /bio-cv/
   # - title: "Contact"
   #   url: https://facebook.com/hridoy100
-  - title: "About"
-    url: /about/
-  - title: "Machine Learning"
-    url: /machine-learning/
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
