@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -112,7 +112,7 @@ analytics:
 author:
   name             : "S.M. Raihanul Alam"
   avatar           : "/assets/images/myimg.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Undergrad student in CSE at BUET. Research area: Bioinformatics"
+  bio              : "Undergrad student in CSE at BUET. **Research area:** Bioinformatics"
   location         : "Dr.M.A. Rashid Hall, BUET"
   email            : #"1505010.smra@ugrad.cse.buet.ac.bd"
   links:
