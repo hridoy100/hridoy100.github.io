@@ -6,4 +6,4 @@ header:
   image: /assets/images/bio-photo.jpg
 ---
 
-(lorem ipsum)
+I am an undergrad **student** of **Computer Science and Engineering** department at **Bangladesh University of Engineering and Technology**.
