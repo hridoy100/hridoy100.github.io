@@ -142,10 +142,10 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hridoy100"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-square"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/raihanul-alam-861394187/"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
       # url:
 
 
