@@ -8,14 +8,14 @@ main:
     url: /publications/
   - title: "Projects"
     url: /projects/
-  - title: "Research"
-    url: /research/
-  - title: "Achievements"
-    url: /achievements/
-  - title: "Personal Blog"
-    url: /blog/
   - title: "CV"
     url: /cv/
+  - title: "Achievements"
+    url: /achievements/
+  - title: "Research"
+    url: /research/
+  - title: "Personal Blog"
+    url: /blog/
   - title: "Sample Pages"
     url: /sample-page/
 
