@@ -1,0 +1,33 @@
+# main links
+main:
+  - title: "Home"
+    url: https://hridoy100.github.io
+  - title: "About"  
+    url: /about/
+  - title: "Publications"
+    url: /publications/
+  - title: "Projects"
+    url: /projects/
+  - title: "CV"
+    url: /cv/
+  - title: "Achievements"
+    url: /achievements/
+  - title: "Research"
+    url: /research/
+  - title: "Personal Blog"
+    url: /blog/
+  - title: "Sample Pages"
+    url: /sample-page/
+
+
+  # - title: "Contact"
+  #   url: https://facebook.com/hridoy100
+    
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
