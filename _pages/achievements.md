@@ -3,6 +3,7 @@ layout: archive
 title: "Achievements"
 permalink: /achievements/
 author_profile: true
+date: 2023-01-08T18:39:14+00:00
 ---
 
 - 3rd in National Science Olympiad - 2015
