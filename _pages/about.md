@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 permalink: /about/
-date: 2011-06-23T18:39:14+00:00
+date: 2023-01-08T18:39:14+00:00
 ---
 
 - I am currently working as a Software Engineer in Tekarsh - MarginEdge.
