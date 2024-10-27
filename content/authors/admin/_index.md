@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Raihanul Alam Hridoy
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+#name_pronunciation: Raihanul Alam Hridoy
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Raihanul
+last_name: Alam Hridoy
 
 # Status emoji
 status:
@@ -20,92 +20,75 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Software Engineer
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: Tekarsh - MarginEdge
+    url: https://tekarsh.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:raihanul.hridoy100@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+#  - icon: brands/x
+#    url: https://twitter.com/GetResearchDev
+  - icon: brands/facebook
+    url: https://www.facebook.com/hridoy100/
+  - icon: brands/youtube
+    url: https://www.youtube.com/@raihanulalamhridoy4714
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/hridoy100
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/raihanul-alam-hridoy-861394187
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://scholar.google.com/citations?user=hk_I6_IAAAAJ&hl=en
+#  - icon: academicons/orcid
+#    url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Machine Learning
+  - Software Engineering
+  - Human Computer Interaction
+  - Bioinformatics
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: BSc in Computer Science and Engineering
+    institution: Bangladesh University of Engineering and Technology (BUET)
+    date_start: 2016-02-27
+    date_end: 2021-02-26
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Thesis on Bioinformatics algorithms. Supervised by [Prof Dr Saidur Rahman](https://saidurrahman.buet.ac.bd/). Presented paper at 12th ICECE an IEEE conference.
+
+        Courses included:
+          - Bioinformatics, Artificial Intelligence, Data Structure and Algorithms
+          - Machine Learning, Computer Architecture, Computer Networks
+          - Software Engineering, Operating System, Computer Security, High Performance Database System
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Software Engineer L2
+    company_name: Tekarsh - MarginEdge
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2022-09-01
     date_end: ''
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      - 
+  - position: Software Engineer
+    company_name: REVE Systems
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2020-01-01
+    date_end: 2022-08-25
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - 
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -183,4 +166,6 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Raihanul Alam Hridoy is a Software Engineer in [Tekarsh](https://tekarsh.com/) - [MarginEdge](https://www.marginedge.com/). 
+Currently he is working along-side a US company [MarginEdge](https://www.marginedge.com/) to 
+help restaurant owners and operators maximize profitability and minimize manual data entry by automating tasks and providing real-time data.
