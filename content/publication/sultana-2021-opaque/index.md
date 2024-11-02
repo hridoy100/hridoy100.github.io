@@ -5,7 +5,7 @@ authors:
 - Sharifa Sultana
 - Ilan Mandel
 - Shaid Hasan
-- SM Raihanul Alam
+- raihan
 - Khandaker Reaz Mahmud
 - Zinnat Sultana
 - Syed Ishtiaque Ahmed

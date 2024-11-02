@@ -8,7 +8,7 @@ authors:
 - Anik Das
 - Rokeya Akter
 - Shaid Hasan
-- SM Raihanul Alam
+- raihan
 - Muhammad Ashad Kabir
 - Syed Ishtiaque Ahmed
 date: '2022-01-01'

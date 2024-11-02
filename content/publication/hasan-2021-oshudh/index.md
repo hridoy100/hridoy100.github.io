@@ -3,7 +3,7 @@ title: '‘Oshudh Poro’: A Mobile-Phone Application to Support Low-literate Ru
   People’s Personal Medication Management [Poster]'
 authors:
 - Shaid Hasan
-- SM Raihanul Alam
+- raihan
 - Sharifa Sultana
 - Syed Ishtiaque Ahmed
 date: '2021-01-01'

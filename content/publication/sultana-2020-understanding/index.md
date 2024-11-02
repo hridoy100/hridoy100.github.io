@@ -5,7 +5,7 @@ authors:
 - Sharifa Sultana
 - Pratyasha Saha
 - Shaid Hasan
-- SM Raihanul Alam
+- raihan
 - Rokeya Akter
 - Md Mirajul Islam
 - Raihan Islam Arnob

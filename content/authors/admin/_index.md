@@ -6,7 +6,7 @@ title: Raihanul Alam Hridoy
 #name_pronunciation: Raihanul Alam Hridoy
 
 # Full name (for SEO)
-first_name: Raihanul
+first_name: S M Raihanul
 last_name: Alam Hridoy
 
 # Status emoji
@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Software Engineer
+role: Fullstack Software Engineer
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -166,6 +166,8 @@ awards:
 
 ## About Me
 
-Raihanul Alam Hridoy is a Software Engineer in [Tekarsh](https://tekarsh.com/) - [MarginEdge](https://www.marginedge.com/). 
-Currently he is working along-side a US company [MarginEdge](https://www.marginedge.com/) to 
-help restaurant owners and operators maximize profitability and minimize manual data entry by automating tasks and providing real-time data.
+**Raihanul Alam Hridoy** is a Fullstack Software Engineer at [Tekarsh](https://tekarsh.com/), collaborating with the U.S.-based company [MarginEdge](https://www.marginedge.com/)
+to streamline restaurant management through automation and machine learning. His work focuses on optimizing profitability and 
+minimizing manual data entry for restaurant owners and operators by developing systems for efficient ordering workflows, automated invoice processing, 
+and real-time data insights. Raihan's role is integral to MarginEdge's mission to empower 
+the restaurant industry with intuitive tools that reduce time-consuming tasks and enhance decision-making through data-driven solutions.
