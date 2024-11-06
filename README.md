@@ -1,4 +1,5 @@
----
+
+![Raihanul Alam Hridoy](content/authors/admin/avatar.png)
 
 ### 👋 About Raihanul Alam Hridoy
 
