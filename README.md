@@ -1,5 +1,7 @@
+<div align="center">
+<img src="content/authors/admin/avatar.png" alt="Raihanul Alam Hridoy" width="350" height="350">
+</div>
 
-![Raihanul Alam Hridoy](content/authors/admin/avatar.png)
 
 ### 👋 About Raihanul Alam Hridoy
 
