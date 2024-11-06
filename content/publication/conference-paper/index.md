@@ -15,6 +15,7 @@ author_notes:
 
 date: '2013-07-01T00:00:00Z'
 doi: ''
+draft: true
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -37,7 +38,7 @@ tags:
   - Large Language Models
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

@@ -5,13 +5,13 @@ type: landing
 
 design:
   # Section spacing
-  spacing: '5rem'
+  spacing: '2rem'
 
 # Page sections
 sections:
   - block: collection
     content:
-      title: Selected Projects
+      title: Top Projects
       text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
       filters:
         folders:
