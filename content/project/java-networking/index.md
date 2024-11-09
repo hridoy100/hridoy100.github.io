@@ -1,6 +1,6 @@
 ---
 title: Java Networking
-date: 2019-10-27
+date: 2017-10-27
 external_link: https://github.com/hridoy100/Java-Networking
 tags:
   - Java

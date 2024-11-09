@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: View CV
-        url: https://drive.google.com/file/d/1hY7ukuakOCSpeoywhxAAqGx0UiGt23AD/view?usp=sharing
+        url: https://drive.google.com/file/d/1Iqz3QirO4J7KX68onSNU4nfngts1ED8g/view?usp=sharing
     design:
       css_class: dark
       background:
@@ -60,9 +60,10 @@ sections:
       filters:
         folders:
           - project
+      count: 12
     design:
       view: article-grid
-      columns: 3
+      columns: 4
   - block: collection
     content:
       title: Recent Publications
