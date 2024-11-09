@@ -22,10 +22,3 @@ Raihanul Alam Hridoy is a dedicated Software Engineer with a diverse background 
 #### 💼 Current Work
 
 As a **Software Engineer at Tekarsh - MarginEdge**, Raihan collaborates with MarginEdge to streamline restaurant management through automation and real-time data insights. His work focuses on leveraging machine learning to enhance invoice processing and ordering efficiency, delivering impactful solutions for restaurant operators.
-
-#### 🔍 Research Interests
-
-Raihan is deeply invested in the intersection of **Human-AI Interaction**, **Machine Learning**, and **Software Engineering**. His goal is to develop intelligent systems that align with human expectations, enhance software reliability, and adapt to user preferences for seamless integration into daily life.
-
---- 
-
