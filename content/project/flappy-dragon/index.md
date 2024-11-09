@@ -5,7 +5,22 @@ external_link:
 tags:
   - C++, IGraphics
   - First Project
+
+links:
+  - icon_pack: fab
+    icon: download
+    name: Download and Play
+    url: 'uploads/flappy-dragon.exe'
+
+
 ---
 
 My first project written in C++ with the help of iGraphics library.
+
+<div style="text-align: center;">
+    <a href="/uploads/flappy-dragon.exe" download="Flappy Dragon">
+        <button>Download (exe) and Play</button>
+    </a>
+</div>
+
 <!--more-->
