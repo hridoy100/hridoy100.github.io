@@ -15,7 +15,7 @@ links:
 
 ---
 
-My first project written in C++ with the help of iGraphics library.
+My first project written in C++ with the help of iGraphics library. Awarded with 2nd runner-up at project showcase competition, CSE Fest, BUET, 2017
 
 <div style="text-align: center;">
     <a href="/uploads/flappy-dragon.exe" download="Flappy Dragon">
