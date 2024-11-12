@@ -53,6 +53,7 @@ interests:
   - Machine Learning
   - Human Computer Interaction
   - Bioinformatics
+  - Health Informatics
 
 education:
   - area: BSc in Computer Science and Engineering
