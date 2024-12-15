@@ -9,7 +9,7 @@ Raihanul Alam Hridoy is a dedicated Software Engineer with a diverse background 
 
 #### 📜 Notable Achievements
 
-- **CHI'21 Honorary Mention**: Raihan’s project, *Unmochon*, received an Honorary Mention at the CHI'21 conference, underscoring his dedication to meaningful innovation.
+- **CHI'21 Honorable Mention**: Raihan’s project, *Unmochon*, received an Honorable Mention at the CHI'21 conference, underscoring his dedication to meaningful innovation.
 - **Top Engineering Ranking**: Raihan ranked 15th nationwide in a competitive engineering exam, earning his place at BUET, Bangladesh’s premier engineering university. Before this, he placed 3rd in the National Science Olympiad and actively participated in various Physics and Math Olympiads.
 - **Published Research**: His undergraduate poster presentation was awarded 1st runner-up at the 7th NSysS conference and later fully published in the 12th ICECE, highlighting his early contributions to research.
 
