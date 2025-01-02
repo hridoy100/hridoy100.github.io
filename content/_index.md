@@ -16,6 +16,7 @@ sections:
       text: ""
       # Show a call-to-action button under your biography? (optional)
       button:
+        icon: "custom/eye"
         text: View CV
         url: https://drive.google.com/file/d/1gKffLMbJfHGWP8oyqYbP-UcHDVHGEBfK/view?usp=sharing
     design:
