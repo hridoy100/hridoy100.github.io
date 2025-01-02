@@ -154,7 +154,7 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Best paper Honorable mention CHI’2021 for 'Unmochon'
+  - title: The Best paper Honorable Mention at CHI’2021 for 'Unmochon'
     url: 
     date: '2021-11-25'
     awarder: CHI conference
@@ -201,7 +201,7 @@ minimizing manual data entry for restaurant owners and operators by developing s
 and real-time data insights. Raihan's role is integral to MarginEdge's mission to empower 
 the restaurant industry with intuitive tools that reduce time-consuming tasks and enhance decision-making through data-driven solutions.
 
-Raihan's journey has been marked by a dedication to learning and achievement. His project _Unmochon_ earned him an Honorable Mention at [CHI'21](https://chi2021.acm.org/), underscoring his passion for impactful research.
+Raihan's journey has been marked by a dedication to learning and achievement. His project _Unmochon_ earned him The Best Paper Honorable Mention at [CHI'21](https://chi2021.acm.org/), underscoring his passion for impactful research.
 His undergraduate poster presentation was awarded **1st** runner-up in the student section of the [7th NSysS](https://cse.buet.ac.bd/nsyss2020/) conference, later earning full publication at the [12th ICECE](https://ieeexplore.ieee.org/xpl/conhome/10088438/proceeding)-an achievement highlighting his early commitment to research.
 
 Throughout his academic life, Raihan has thrived in challenges: he ranked **15th** in a nationwide engineering exam, securing a place at BUET, Bangladesh’s premier engineering institution. 
