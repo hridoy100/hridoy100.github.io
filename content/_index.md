@@ -18,7 +18,7 @@ sections:
       button:
         icon: "custom/eye"
         text: View CV
-        url: https://drive.google.com/file/d/1gKffLMbJfHGWP8oyqYbP-UcHDVHGEBfK/view?usp=sharing
+        url: https://drive.google.com/file/d/1CymUY_80hcuWUAiV4sxmKQWYPtMUkVZ4/view?usp=sharing
     design:
       css_class: dark
       background:
