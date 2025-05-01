@@ -1,7 +1,7 @@
 ---
 title: FOGSense
 date: 2025-04-01
-external_link: https://github.com/hridoy100/FOGSense
+external_link: https://hridoy100.github.io/FOGSense
 tags:
   - Wearable Computing
   - Healthcare

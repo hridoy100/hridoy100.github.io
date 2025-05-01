@@ -13,6 +13,7 @@ date: '2025-04-01'
 publishDate: '2024-10-27T22:30:38.217423Z'
 publication_types:
 - paper-conference
+external_link: https://hridoy100.github.io/FOGSense
 
 tags:
   - Wearable Computing
