@@ -79,6 +79,9 @@ footer:
       share_alike: true
       allow_commercial: false
 
+  show_last_updated: true
+  last_updated_text: 'Last updated on'
+
 # Localization
 locale:
   date_format: 'Jan 2, 2006'
@@ -90,4 +93,8 @@ features:
     enable: true
   privacy_pack:
     enable: false
+
+params:
+  # Site last updated date - update this whenever you make changes
+  last_updated: '2025-05-11'
 
