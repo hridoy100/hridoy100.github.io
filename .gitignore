@@ -1,6 +1,11 @@
 /.idea
 .DS_Store
-node_modules
+/public
+/resources
+/node_modules
+.hugo_build.lock
+go.sum
+hugo_stats.json
 dist
 tmp
 # Hugo
