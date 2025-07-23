@@ -70,6 +70,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://drive.google.com/file/d/1DJrtyWmpwX_Hjfec64XAwL05J-O-8GnP/view?usp=sharing'
+      icon: eye
       
 work:
   - position: Software Engineer L2
