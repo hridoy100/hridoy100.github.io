@@ -1,5 +1,6 @@
 <div align="center">
 <img src="content/authors/admin/avatar.png" alt="Raihanul Alam Hridoy" width="350" height="350">
+<!-- <img src="assets/media/professional_raihan.jpg" alt="Raihanul Alam Hridoy" width="600" height="600"> -->
 </div>
 
 
