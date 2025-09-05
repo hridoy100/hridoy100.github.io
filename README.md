@@ -5,7 +5,7 @@
 
 ### 👋 About Raihanul Alam Hridoy
 
-Raihanul Alam Hridoy is a dedicated Software Engineer with a diverse background in software engineering, machine learning, and interdisciplinary research. His journey is defined by a passion for impactful work and a commitment to excellence.
+Raihanul Alam Hridoy is a Graduate Teaching Assistant in the Computer Science department at the University of Iowa. A former software engineer with extensive experience in software engineering, machine learning, and interdisciplinary research, he brings a passion for impactful work and commitment to excellence to his academic pursuits.
 
 #### 📜 Notable Achievements
 
