@@ -196,10 +196,10 @@ awards:
 
 ## About Me
 
-**Raihanul Alam Hridoy** is a Fullstack Software Engineer at [Tekarsh](https://tekarsh.com/), collaborating with the U.S.-based company [MarginEdge](https://www.marginedge.com/)
-to streamline restaurant management through automation and machine learning. His work focuses on optimizing profitability and 
+**Raihanul Alam Hridoy** is a **Graduate Teaching Assistant** in the Computer Science department at the **University of Iowa** and former Fullstack Software Engineer at [Tekarsh](https://tekarsh.com/), where he collaborated with the U.S.-based company [MarginEdge](https://www.marginedge.com/)
+to streamline restaurant management through automation and machine learning. His work focused on optimizing profitability and 
 minimizing manual data entry for restaurant owners and operators by developing systems for efficient ordering workflows, automated invoice processing, 
-and real-time data insights. Raihan's role is integral to MarginEdge's mission to empower 
+and real-time data insights. Raihan's role was integral to MarginEdge's mission to empower 
 the restaurant industry with intuitive tools that reduce time-consuming tasks and enhance decision-making through data-driven solutions.
 
 Raihan's journey has been marked by a dedication to learning and achievement. His project _Unmochon_ earned him The Best Paper Honorable Mention at [CHI'21](https://chi2021.acm.org/), underscoring his passion for impactful research.
