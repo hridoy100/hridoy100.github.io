@@ -21,4 +21,8 @@ Raihanul Alam Hridoy is a Graduate Teaching Assistant in the Computer Science de
 
 #### 💼 Current Work
 
+**Graduate Teaching Assistant** at the **University of Iowa**'s Computer Science Department, Raihan combines his passion for education with his technical expertise. Drawing from his background as a former **Software Engineer at Tekarsh - MarginEdge**, he mentors students while conducting research in machine learning and interdisciplinary applications, committed to delivering impactful academic and research contributions.
+
+<!-- 
 As a **Software Engineer at Tekarsh - MarginEdge**, Raihan collaborates with MarginEdge to streamline restaurant management through automation and real-time data insights. His work focuses on leveraging machine learning to enhance invoice processing and ordering efficiency, delivering impactful solutions for restaurant operators.
+-->
