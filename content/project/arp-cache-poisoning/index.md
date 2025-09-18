@@ -23,8 +23,8 @@ network segment to be attacked.
 
 ### Man-in-the-Middle Attack
 
-![Man-in-the-Middle Attack](/media/man-in-the-middle-attack.png)
+{{< figure src="/media/man-in-the-middle-attack.png" alt="Man-in-the-Middle Attack" >}}
 
 ### ARP Spoofing Attack Flowchart
 
-![ARP Spoofing Attack](/media/arp-spoof.png)
+{{< figure src="/media/arp-spoof.png" alt="ARP Spoofing Attack" >}}

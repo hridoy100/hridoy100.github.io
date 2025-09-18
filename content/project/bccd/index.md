@@ -33,8 +33,8 @@ Here are the architectures for the two models used in this project:
 
 #### YOLOv5 Architecture
 
-![YOLOv5 Architecture](/media/yolo_architecture.jpg)
+{{< figure src="/media/yolo_architecture.jpg" alt="YOLOv5 Architecture" >}}
 
 #### Mask R-CNN Architecture
 
-![Mask R-CNN Architecture](/media/mask_rcnn.png)
+{{< figure src="/media/mask_rcnn.png" alt="Mask R-CNN Architecture" >}}
