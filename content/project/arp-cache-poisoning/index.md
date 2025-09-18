@@ -19,3 +19,26 @@ on networks that use ARP, and requires attacker have direct access to the local
 network segment to be attacked.
 
 <!--more-->
+
+### Man-in-the-Middle Attack
+
+```mermaid
+graph TD
+    A[Victim] -- Legitimate Traffic --> B(Router);
+    C(Attacker) -- ARP Spoofing --> A;
+    C -- ARP Spoofing --> B;
+    A -- Intercepted Traffic --> C;
+    C -- Relayed Traffic --> B;
+```
+
+### ARP Spoofing Attack Flowchart
+
+```mermaid
+graph TD
+    A[Start] --> B{Attacker sends<br>spoofed ARP packets};
+    B --> C{Victim's ARP cache<br>is poisoned};
+    C --> D{Router's ARP cache<br>is poisoned};
+    D --> E{Attacker is now the<br>man-in-the-middle};
+    E --> F[Attacker intercepts<br>and relays traffic];
+    F --> G[End];
+```

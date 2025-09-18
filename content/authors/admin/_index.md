@@ -96,19 +96,24 @@ work:
     date_start: 2020-01-01
     date_end: 2022-08-25
     summary: |
-      Responsibilities include:
-      - Tech Stack: Java, Spring Boot, Python, MySQL, VisualVM, Vue js, Node js, Redis
-      - Implemented a high-speed billing authorization server capable of handling in excess of 10K transactions per second
-      - Integrated IVR(Interactive Voice Response) and gTTS(Google Text-to-Speech) for automated quick text-to-speech translations
-      - Performed memory leak investigation using VisualVM and managed to reduce memory overhead up to 5%
-      - Refactored iTel Switch server to add better code readability and enhanced the processing speed up to 2x
+      - Engineered a high-speed billing authorization server, achieving a throughput of over 10,000 transactions per second.
+      - Enhanced the iTel Switch server by refactoring the codebase, which doubled the processing speed and improved code readability.
+      - Reduced memory overhead by 5% through meticulous memory leak investigation using VisualVM.
+      - Integrated IVR (Interactive Voice Response) and gTTS (Google Text-to-Speech) to enable automated text-to-speech translations.
+      - Tech Stack: Java, Spring Boot, Python, MySQL, VisualVM, Vue.js, Node.js, Redis
   - position: Co-Founder
     company_name: "Sohopathi (Mainframe Labs)"
     company_url: ''
     company_logo: ''
     date_start: 2017-09-01
     date_end: 2019-11-01
-    summary: 
+    summary: |
+      - As a Co-Founder of Sohopathi, I co-led the development of a peer-to-peer learning platform to improve the quality of education in Bangladesh.
+      - Grew the platform to serve over 5,000 students, with a 6% conversion rate to paid features.
+      - Successfully launched the initial website within three months.
+      - Secured partnerships with A2I, the ICT Division of Bangladesh, "10 Minute School", and "Roar Media".
+      - Selected for the "Grameenphone Pre-Accelerator 2019" program.
+      - Tech Stack: Web-based platform, with plans to integrate AR/VR and machine learning.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
