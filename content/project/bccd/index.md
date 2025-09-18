@@ -37,4 +37,4 @@ Here are the architectures for the two models used in this project:
 
 #### Mask R-CNN Architecture
 
-![Mask R-CNN Architecture](/media/mask_rcnn.png)
+{{< figure src="/media/mask-rcnn-new.png" alt="Mask R-CNN Architecture" >}}
