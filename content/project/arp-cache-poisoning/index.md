@@ -1,11 +1,12 @@
 ---
 title: ARP Cache Poisoning
 date: 2019-09-09
-external_link: https://drive.google.com/file/d/1XZ6llzPHPvosuvshQ-XCG8pNwXbSVwib/view?usp=sharing
+
 tags:
   - Computer Security
   - Wireshark
 ---
+[View Project](https://drive.google.com/file/d/1XZ6llzPHPvosuvshQ-XCG8pNwXbSVwib/view?usp=sharing)
 
 In computer networking, ARP spoofing, ARP cache poisoning, or ARP
 poison routing, is a technique by which an attacker sends (spoofed) Address
@@ -19,3 +20,11 @@ on networks that use ARP, and requires attacker have direct access to the local
 network segment to be attacked.
 
 <!--more-->
+
+### Man-in-the-Middle Attack
+
+![Man-in-the-Middle Attack](/media/man-in-the-middle-attack.png)
+
+### ARP Spoofing Attack Flowchart
+
+![ARP Spoofing Attack](/media/arp-spoof.png)
