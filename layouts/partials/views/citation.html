@@ -2,7 +2,7 @@
 {{/* Display publications */}}
 
 {{ $page := .page }}
-{{ $items := where $page.RegularPages ".Type" "publication" }}
+{{ $items := where site.RegularPages ".Type" "publication" }}
 
 {{/* Sort */}}
 {{ $items = $items.ByParam "weight" }}
