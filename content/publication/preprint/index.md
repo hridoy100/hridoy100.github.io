@@ -26,6 +26,7 @@ tags:
 - Large Language Models
 
 featured: false
+weight: 100
 
 links:
 - name: Custom Link

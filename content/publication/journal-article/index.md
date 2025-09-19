@@ -29,6 +29,7 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere t
 tags:
 - Source Themes
 featured: false
+weight: 100
 
 # links:
 # - name: ""

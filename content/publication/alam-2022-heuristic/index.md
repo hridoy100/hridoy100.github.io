@@ -17,6 +17,7 @@ tags:
   - Undergraduate Thesis
   
 featured: true
+weight: 10
 
 
 links:

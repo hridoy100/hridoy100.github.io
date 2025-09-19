@@ -1,0 +1,14 @@
+{{/* Hugo Blox: Citation View */}}
+{{/* Display publications */}}
+
+{{ $page := .page }}
+{{ $items := where $page.RegularPages ".Type" "publication" }}
+
+{{/* Sort */}}
+{{ $items = $items.ByParam "weight" }}
+
+<div class="grid grid-cols-1 gap-4">
+  {{ range $items }}
+    {{ partial "li_citation" . }}
+  {{ end }}
+</div>

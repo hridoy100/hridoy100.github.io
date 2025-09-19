@@ -16,6 +16,7 @@ publication_types:
 publication: '*JMIR Formative Research*'
 
 featured: true
+weight: 20
 
 tags:
   - HCI

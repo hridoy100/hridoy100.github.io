@@ -15,4 +15,5 @@ publication_types:
 - paper-conference
 publication: '*Proceedings of the 4th ACM SIGCAS Conference on Computing and Sustainable
   Societies*'
+weight: 100
 ---

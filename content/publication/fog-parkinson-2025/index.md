@@ -21,6 +21,7 @@ tags:
   - Parkinson's Disease
   
 featured: true
+weight: 30
 
 links:
   - name: arXiv

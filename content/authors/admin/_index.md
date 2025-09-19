@@ -40,9 +40,9 @@ profiles:
     url: https://www.youtube.com/@raihanulalamhridoy4714
 
 interests:
-  - Human-Centered Ubiquitous Computing
-  - Multimodal Sensing & Time-Series Forecasting
-  - Machine Learning for Well-being & Health Informatics
+  - Human-Centered Computing
+  - Multimodal Sensing & Forecasting
+  - Applied Machine Learning
   - Software Engineering & Security
 
 education:
@@ -122,7 +122,7 @@ awards:
 ## About Me
 
  - Graduate Teaching Assistant in Computer Science, University of Iowa  
-  - Research focus: **Human-Centered Ubiquitous Computing**, **Multimodal Sensing**, and **Forecasting for Well-being**  
+  - Research focus: **Human-Centered Computing**, **Multimodal Sensing**, and **Software Engineering and Security**  
   - Former Full-Stack Engineer at Tekarsh/MarginEdge, building ML-powered tools for restaurant management  
-  - Best Paper Honorable Mention at **CHI’21** (_Unmochon_); undergraduate research published at **_ICECE’22_**
+  - Best Paper Honorable Mention at **CHI’21** [(Paper)](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445154)
   - Strong foundation in software engineering, machine learning, and health informatics; passionate about designing data-driven systems for impact

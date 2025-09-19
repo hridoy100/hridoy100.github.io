@@ -14,6 +14,7 @@ publication_types:
 publication: '*Proceedings of the tenth international conference on information and
   communication technologies and development*'
 featured: true
+weight: 40
 tags:
   - ICTD
   - Feminist-HCI, 

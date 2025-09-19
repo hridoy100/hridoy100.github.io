@@ -17,4 +17,5 @@ publication_types:
 - paper-conference
 publication: '*Proceedings of the 2022 CHI Conference on Human Factors in Computing
   Systems*'
+weight: 100
 ---
