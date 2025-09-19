@@ -118,7 +118,6 @@ awards:
     date: '2015-02-01'
     awarder: DU
 
-# About Me (concise & research-focused)
 ---
 ## About Me
 
@@ -127,5 +126,3 @@ awards:
   - Former Full-Stack Engineer at Tekarsh/MarginEdge, building ML-powered tools for restaurant management  
   - Best Paper Honorable Mention at **CHI’21** (_Unmochon_); undergraduate research published at **_ICECE’22_**
   - Strong foundation in software engineering, machine learning, and health informatics; passionate about designing data-driven systems for impact
-
----
