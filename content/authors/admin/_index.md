@@ -3,7 +3,7 @@
 title: Raihanul Alam Hridoy
 
 # Full name (for SEO)
-first_name: S M Raihanul
+first_name: Raihanul
 last_name: Alam Hridoy
 
 # Status emoji
