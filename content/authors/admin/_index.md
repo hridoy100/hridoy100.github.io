@@ -16,6 +16,10 @@ highlight_name: true
 # Role/position/tagline
 role: Graduate Teaching Assistant & Researcher
 
+avatar:
+  image: avatar.jpg
+  resize: "350x350 q90"
+  
 # Organizations/Affiliations
 organizations:
   - name: University of Iowa – Dept. of Computer Science
@@ -118,9 +122,6 @@ awards:
     date: '2015-02-01'
     awarder: DU
     
-avatar:
-  image: /media/raihan-1.png   # use the file in /static
-  resize: ""                 # remove any "150x150"
 
 ---
 ## About Me
