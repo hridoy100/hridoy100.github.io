@@ -107,3 +107,7 @@
   background: url("/media/raihan-1.png") center/cover no-repeat;
   border-radius: 48%;
 }
+
+.resume-biography .avatar-wrapper::after {
+  inset: 4px;  /* keeps 4px border around */
+}
