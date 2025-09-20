@@ -57,6 +57,11 @@ education:
     summary: |
       Thesis on Bioinformatics algorithms (advisor: Prof. Md Saidur Rahman).  
       Published at the 12th ICECE (IEEE).
+      
+    button:
+      text: 'Read Thesis'
+      url: 'https://drive.google.com/file/d/1DJrtyWmpwX_Hjfec64XAwL05J-O-8GnP/view?usp=sharing'
+      icon: eye
 
 work:
   - position: Graduate Teaching Assistant
@@ -90,17 +95,33 @@ skills:
   - name: Technical Skills
     items:
       - name: Java
+        description: ''
+        icon: code-bracket
       - name: Python
+        description: ''
+        icon: code-bracket
       - name: JavaScript / TypeScript
+        description: ''
+        icon: code-bracket
       - name: React & Spring Boot
+        description: ''
+        icon: code-bracket
       - name: AWS & PostgreSQL
+        description: ''
+        icon: circle-stack
       - name: Machine Learning
+        description: ''
+        icon: chart-bar
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
       - name: Coding
+        description: ''
+        icon: code-bracket
       - name: Reading
+        description: ''
+        icon: person-simple-walk
 
 languages:
   - name: Bengali
@@ -127,4 +148,5 @@ awards:
 ## About Me
   - Follow my research [Google Scholar (Citations 200+)](https://scholar.google.com/citations?user=hk_I6_IAAAAJ&hl=en)
   - Best Paper Honorable Mention at **CHI’21** [(Paper)](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445154)
+  - My undergraduate thesis on [Phylogenetic Trees](https://drive.google.com/file/d/1DJrtyWmpwX_Hjfec64XAwL05J-O-8GnP/view?usp=sharing)
   - Strong foundation in software engineering, machine learning, and health informatics; passionate about designing data-driven systems for impact
