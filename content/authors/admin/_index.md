@@ -119,7 +119,7 @@ awards:
     awarder: DU
     
 avatar:
-  image: /media/avatar.png   # use the file in /static
+  image: /media/raihan-1.png   # use the file in /static
   resize: ""                 # remove any "150x150"
 
 ---
