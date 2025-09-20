@@ -67,8 +67,8 @@
 
 /* --- Avatar size --- */
 .resume-biography .avatar-wrapper img.avatar {
-  width: 350px !important;
-  height: 350px !important;
+  width: 300px !important;
+  height: 300px !important;
 
   /* keep round & cover behaviour */
   object-fit: cover;
@@ -83,12 +83,12 @@
 .resume-biography .avatar-wrapper .avatar-emoji {
   font-size: 3rem;         /* scale emoji */
   position: absolute;
-  bottom: 12px;            /* move up from bottom edge */
-  right: 12px;             /* move left from right edge */
+  bottom: 10px;            /* move up from bottom edge */
+  right: 10px;             /* move left from right edge */
   line-height: 1;
 }
 
 .resume-biography .avatar-wrapper {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }
