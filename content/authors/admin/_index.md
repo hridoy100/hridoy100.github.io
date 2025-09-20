@@ -148,5 +148,4 @@ awards:
 ## About Me
   - Follow my research [Google Scholar (Citations 200+)](https://scholar.google.com/citations?user=hk_I6_IAAAAJ&hl=en)
   - Best Paper Honorable Mention at **CHI’21** [(Paper)](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445154)
-  - My undergraduate thesis on [Phylogenetic Trees](https://drive.google.com/file/d/1DJrtyWmpwX_Hjfec64XAwL05J-O-8GnP/view?usp=sharing)
   - Strong foundation in software engineering, machine learning, and health informatics; passionate about designing data-driven systems for impact
