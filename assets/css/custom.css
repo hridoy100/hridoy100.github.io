@@ -107,3 +107,25 @@
   background: url("/media/raihan-1.png") center/cover no-repeat;
   border-radius: 50%;
 }
+
+
+/* Hide the default “Published with Hugo Blox Builder” line */
+.powered-by.text-center a[href*="hugoblox"],
+.powered-by.text-center a[href*="hugo-blox-builder"],
+.powered-by.text-center:has(a[href*="hugoblox"]) {
+  display: none !important;
+}
+
+/* Or, if you want to hide that entire paragraph instead: */
+p.powered-by.text-center:has(a[href*="hugoblox"]) {
+  display: none !important;
+}
+
+/* Make your own copyright line stand out */
+p.powered-by.text-center {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #222;         /* adjust for your palette */
+  text-align: center;
+  margin-top: 1.5rem;
+}
