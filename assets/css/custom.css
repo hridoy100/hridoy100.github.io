@@ -65,4 +65,17 @@
   margin-left: 2rem !important;
 }
 
+/* Enlarge the profile avatar to 350px */
+.resume-biography .avatar-wrapper img.avatar {
+  width: 350px !important;
+  height: 350px !important;
+
+  /* keep it from overflowing small screens */
+  max-width: 90vw;
+  max-height: 90vw;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 
