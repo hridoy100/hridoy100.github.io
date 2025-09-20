@@ -65,17 +65,27 @@
   margin-left: 2rem !important;
 }
 
-/* Enlarge the profile avatar to 350px */
+/* --- Avatar size --- */
 .resume-biography .avatar-wrapper img.avatar {
   width: 350px !important;
   height: 350px !important;
 
-  /* keep it from overflowing small screens */
-  max-width: 90vw;
-  max-height: 90vw;
-
+  /* keep round & cover behaviour */
   object-fit: cover;
   border-radius: 50%;
+
+  /* be responsive on small screens */
+  max-width: 90vw;
+  max-height: 90vw;
+}
+
+/* --- Emoji badge on avatar --- */
+.resume-biography .avatar-wrapper .avatar-emoji {
+  font-size: 3rem;         /* scale emoji */
+  position: absolute;
+  bottom: 12px;            /* move up from bottom edge */
+  right: 12px;             /* move left from right edge */
+  line-height: 1;
 }
 
 
