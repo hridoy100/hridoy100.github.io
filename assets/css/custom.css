@@ -83,9 +83,16 @@
 .resume-biography .avatar-wrapper .avatar-emoji {
   font-size: 3rem;         /* scale emoji */
   position: absolute;
-  bottom: 10px;            /* move up from bottom edge */
-  right: 10px;             /* move left from right edge */
+  bottom: 25px;            /* move up from bottom edge */
+  right: 20px;             /* move left from right edge */
   line-height: 1;
+}
+
+/* --- Emoji badge on avatar --- */
+.resume-biography .dark .avatar-wrapper .avatar-emoji {
+    background-color: transparent;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important; /* for older WebKit */
 }
 
 .resume-biography .avatar-wrapper {
