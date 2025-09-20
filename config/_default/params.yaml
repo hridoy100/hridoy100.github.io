@@ -99,4 +99,5 @@ params:
   last_updated: '2025-05-11'
   customCSS:
     - css/custom.css
+  avatar_size: 350
 
