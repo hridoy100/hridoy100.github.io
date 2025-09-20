@@ -32,29 +32,32 @@
   text-align: center;
 }
 
-/* Center CV button and keep it as a compact pill */
-.resume-biography a[href*="drive.google.com"]{
-  display: block !important;
-  width: max-content;           /* or: width: fit-content; */
-  margin: 1rem auto !important; /* centers horizontally */
-  text-align: center;
+/* Keep the button size natural and center it */
+.resume-biography a[href*="drive.google.com"] {
+  display: inline-flex !important;
+  align-items: center;          /* vertical center for icon + text */
+  justify-content: center;
+  margin: 1rem auto !important;
+  width: fit-content;
 }
 
-/* Hide old download SVG */
-.resume-biography a[href*="drive.google.com"] svg{
+/* Hide the old download SVG inside the link */
+.resume-biography a[href*="drive.google.com"] svg {
   display: none !important;
 }
 
-/* Add an eye icon before the text (vector, inherits color) */
-.resume-biography a[href*="drive.google.com"]::before{
+/* Add a clean eye icon before text */
+.resume-biography a[href*="drive.google.com"]::before {
   content: "";
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
   margin-right: 0.5rem;
-  background: currentColor;
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5C5 5 1 12 1 12s4 7 11 7 11-7 11-7-4-7-11-7zm0 12a5 5 0 110-10 5 5 0 010 10z"/></svg>') no-repeat center / contain;
-          mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5C5 5 1 12 1 12s4 7 11 7 11-7 11-7-4-7-11-7zm0 12a5 5 0 110-10 5 5 0 010 10z"/></svg>') no-repeat center / contain;
+  background-color: currentColor;
+
+  /* vector eye mask (inline SVG) */
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='black' stroke-width='2' d='M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12zm11 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8z'/></svg>") no-repeat center / contain;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='black' stroke-width='2' d='M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12zm11 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8z'/></svg>") no-repeat center / contain;
 }
 
 
