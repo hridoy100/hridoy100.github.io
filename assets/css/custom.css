@@ -126,7 +126,7 @@ p.powered-by.text-center:has(a[href*="hugoblox"]) {
 p.powered-by.text-center {
   font-weight: bold;
   font-size: 1.1rem;
-  color: #222;         /* adjust for your palette */
   text-align: center;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
