@@ -38,9 +38,9 @@ outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
   section: [HTML, RSS]
 imaging:
-#  resampleFilter: lanczos
+  resampleFilter: lanczos
   quality: 90
-#  anchor: smart
+  anchor: smart
 timeout: 600000
 taxonomies:
   author: authors
