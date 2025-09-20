@@ -60,4 +60,21 @@
           mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='black' stroke-width='2' d='M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12zm11 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8z'/></svg>") no-repeat center / contain;
 }
 
+/* Tweak spacing for "View CV" */
+.resume-biography a[href*="drive.google.com"] {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  /* spacing */
+  margin: 1rem auto 0 auto;  /* top, sides auto = center */
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Optional: shift slightly to the right */
+.resume-biography a[href*="drive.google.com"] {
+  margin-left: 1.5rem;  /* <— adjust to taste */
+}
+
 
