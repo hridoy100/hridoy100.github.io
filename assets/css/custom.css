@@ -6,6 +6,11 @@
     padding-right: 10px;
 }
 
+#section-resume-biography-3 {
+  padding-top: 0 !important;
+  padding-bottom: 2rem;  /* keep bottom spacing */
+}
+
 /* Tweak padding & margin inside the "About Me" content */
 .flex-auto.max-w-prose {
   margin-top: 0 !important;   /* default md:mt-12 = ~3rem */
