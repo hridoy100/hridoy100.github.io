@@ -68,7 +68,7 @@ work:
     company_name: University of Iowa
     date_start: 2025-08-01
     summary: |
-      - Assisting CS coursework, mentoring students, and supporting research on ubiquitous computing & data visualization.
+      - Assisting CS coursework, mentoring students, and supporting research studies.
   - position: Software Engineer L2
     company_name: Tekarsh – MarginEdge
     date_start: 2022-09-01
