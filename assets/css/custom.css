@@ -88,4 +88,7 @@
   line-height: 1;
 }
 
-
+.resume-biography .avatar-wrapper {
+  width: 350px;
+  height: 350px;
+}
