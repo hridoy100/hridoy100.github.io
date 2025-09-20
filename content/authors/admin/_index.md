@@ -16,9 +16,9 @@ highlight_name: true
 # Role/position/tagline
 role: Graduate Teaching Assistant & Researcher
 
-avatar:
-  image: avatar.jpg
-  resize: "350x350 q90"
+#avatar:
+#  image: avatar.jpg
+#  resize: "350x350 q90"
   
 # Organizations/Affiliations
 organizations:
