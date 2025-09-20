@@ -1,0 +1,7 @@
+/* Reduce padding on the biography block */
+.resume-biography #profile {
+    padding-top: 0 !important;
+    padding-bottom: 12px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}

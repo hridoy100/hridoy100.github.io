@@ -97,4 +97,6 @@ features:
 params:
   # Site last updated date - update this whenever you make changes
   last_updated: '2025-05-11'
+  customCSS:
+    - css/custom.css
 
