@@ -117,6 +117,10 @@ awards:
   - title: 3rd – National Science Olympiad
     date: '2015-02-01'
     awarder: DU
+    
+avatar:
+  image: /media/avatar.png   # use the file in /static
+  resize: ""                 # remove any "150x150"
 
 ---
 ## About Me
