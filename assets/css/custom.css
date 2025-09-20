@@ -90,7 +90,7 @@
 
 /* --- Emoji badge on avatar --- */
 .resume-biography .dark .avatar-wrapper .avatar-emoji {
-    background-color: transparent;
+    background-color: transparent !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important; /* for older WebKit */
 }
