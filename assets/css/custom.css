@@ -32,19 +32,29 @@
   text-align: center;
 }
 
-.resume-biography a[href*="drive.google.com"] {
+/* Center CV button and keep it as a compact pill */
+.resume-biography a[href*="drive.google.com"]{
   display: block !important;
-  margin: 1rem auto !important;
+  width: max-content;           /* or: width: fit-content; */
+  margin: 1rem auto !important; /* centers horizontally */
   text-align: center;
 }
 
-.resume-biography a[href*="drive.google.com"] svg {
+/* Hide old download SVG */
+.resume-biography a[href*="drive.google.com"] svg{
   display: none !important;
 }
 
-.resume-biography a[href*="drive.google.com"]::before {
-  content: "👁️";
+/* Add an eye icon before the text (vector, inherits color) */
+.resume-biography a[href*="drive.google.com"]::before{
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
   margin-right: 0.5rem;
-  font-size: 1rem;
+  background: currentColor;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5C5 5 1 12 1 12s4 7 11 7 11-7 11-7-4-7-11-7zm0 12a5 5 0 110-10 5 5 0 010 10z"/></svg>') no-repeat center / contain;
+          mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5C5 5 1 12 1 12s4 7 11 7 11-7 11-7-4-7-11-7zm0 12a5 5 0 110-10 5 5 0 010 10z"/></svg>') no-repeat center / contain;
 }
+
 
