@@ -67,12 +67,16 @@
 
 /* --- Avatar size --- */
 .resume-biography .avatar-wrapper img.avatar {
-  width: 100% !important;      /* CHANGED: was 300px */
-    height: 100% !important;     /* CHANGED: was 300px */
-    object-fit: cover;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;                  /* below overlay */
+  width: 300px !important;
+  height: 300px !important;
+
+  /* keep round & cover behaviour */
+  object-fit: cover;
+  border-radius: 50%;
+
+  /* be responsive on small screens */
+  max-width: 90vw;
+  max-height: 90vw;
 }
 
 /* --- Emoji badge on avatar --- */
@@ -92,21 +96,14 @@
 }
 
 .resume-biography .avatar-wrapper {
-  position: relative;     /* NEW: needed for ::after */
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;     /* circle, not 48% */
-    box-sizing: border-box;
+  width: 300px;
+  height: 300px;
 }
 
-.resume-biography .avatar-wrapper::after {
+.resume-biography .avatar-wrapper::before {
   content: "";
   position: absolute;
-  inset: 4px;  /* = border/padding thickness so the old ring shows */
+  inset: 0;
   background: url("/media/raihan-1.png") center/cover no-repeat;
   border-radius: 50%;
-  z-index: 2;          /* above <img>, below emoji */
-  pointer-events: none;
 }
-
-.resume-biography .avatar-wrapper .avatar-emoji { z-index: 3; }
