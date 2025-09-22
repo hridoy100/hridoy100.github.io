@@ -44,10 +44,10 @@ profiles:
     url: https://www.youtube.com/@raihanulalamhridoy4714
 
 interests:
-  - Human-Centered Computing
-  - Multimodal Sensing & Forecasting
   - Applied Machine Learning
+  - Human-Centered Computing
   - Software Engineering & Security
+  - Multimodal Sensing & Forecasting
 
 education:
   - area: BSc in Computer Science and Engineering
