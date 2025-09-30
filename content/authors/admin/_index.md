@@ -41,7 +41,7 @@ profiles:
   - icon: brands/facebook
     url: https://www.facebook.com/hridoy100/
   - icon: brands/youtube
-    url: https://www.youtube.com/@raihanulalamhridoy4714
+    url: https://www.youtube.com/@RaihanulAlamHridoyOfficial
 
 interests:
   - Applied Machine Learning
