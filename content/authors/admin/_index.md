@@ -50,8 +50,8 @@ interests:
   - Multimodal Sensing & Forecasting
 
 education:
-  - area: BSc in Computer Science and Engineering (top ~35%)
-    institution: Bangladesh University of Engineering and Technology (BUET)
+  - area: BSc in Computer Science and Engineering
+    institution: Bangladesh University of Engineering and Technology (BUET) (top ~35%)
     date_start: 2016-02-27
     date_end: 2021-02-26
     summary: |
