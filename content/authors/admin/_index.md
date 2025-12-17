@@ -14,7 +14,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Graduate Teaching Assistant & Researcher
+role: Graduate Teaching Assistant
 
 #avatar:
 #  image: avatar.jpg
@@ -50,6 +50,9 @@ interests:
   - Multimodal Sensing & Forecasting
 
 education:
+  - area: Computer Science and Engineering
+      institution: University of Iowa (UIOWA)
+      date_start: 2025-08-01
   - area: BSc in Computer Science and Engineering
     institution: Bangladesh University of Engineering and Technology (BUET)
     date_start: 2016-02-27
@@ -68,7 +71,7 @@ work:
     company_name: University of Iowa
     date_start: 2025-08-01
     summary: |
-      - Assisting CS coursework, mentoring students, and supporting research studies.
+      - CS 2230 : Data structures Fall 2025
   - position: Software Engineer L2
     company_name: Tekarsh – MarginEdge
     date_start: 2022-09-01
