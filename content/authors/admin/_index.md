@@ -50,7 +50,7 @@ interests:
   - Multimodal Sensing & Forecasting
 
 education:
-  - area: Computer Science and Engineering
+  - area: Computer Science
     institution: University of Iowa (UIOWA)
     date_start: 2025-08-01
   - area: BSc in Computer Science and Engineering
