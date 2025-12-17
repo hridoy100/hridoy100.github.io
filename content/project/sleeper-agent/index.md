@@ -8,7 +8,7 @@ tags:
   - Backdoor Attacks
   - Computer Security
 ---
-[View Project](https://drive.google.com/file/d/1hFfsb2M3p3FIV0ll4BbK7vw5-uT4JIWF/view?usp=sharing)
+[View Project](https://drive.google.com/file/d/1fgyNho1_cwGwCNoeuIjFHptusaN7vK9A/view?usp=sharing)
 
 Sleeper Agent is a **scalable clean-label data poisoning attack** that implants
 **hidden trigger backdoors** into neural networks trained *from scratch*. Unlike
@@ -68,6 +68,3 @@ activates the backdoor, forcing the model to predict the attacker’s target
 label. Importantly, common defenses such as activation clustering, spectral
 signatures, STRIP, and Neural Cleanse largely fail to detect this attack, as the
 poisons are both subtle and widely dispersed across classes.
-
----
-
