@@ -1,5 +1,5 @@
 ---
-title: Sleeper Agent: Hidden Trigger Backdoors in Neural Networks
+title: "Sleeper Agent: Hidden Trigger Backdoors in Neural Networks"
 date: 2025-10-01
 
 tags:
