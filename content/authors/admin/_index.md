@@ -71,7 +71,7 @@ work:
     company_name: University of Iowa
     date_start: 2025-08-01
     summary: |
-      - CS 2230 : Data structures Fall 2025
+      - CS 2230:Data structures Fall 2025
   - position: Software Engineer L2
     company_name: Tekarsh – MarginEdge
     date_start: 2022-09-01
