@@ -37,7 +37,8 @@ learning (FL) setting.
 - Includes scripts/notebooks for running the attack and visualizing results.
 
 ### Demo
-{{< figure src="https://github.com/hridoy100/gradient-inversion-attack/blob/b1ebba04f4dbf6c197a7b4285f90f823937fc10c/assets/demo-crop.gif" alt="Gradient inversion reconstruction process demo" >}}
+{{< figure src="/media/demo-grad-inv.gif" alt="Gradient inversion reconstruction process demo" >}}
+
 
 ### References
 - Zhu et al., "Deep Leakage from Gradients" (DLG), NeurIPS 2019.
