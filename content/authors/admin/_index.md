@@ -44,15 +44,15 @@ profiles:
     url: https://www.youtube.com/@RaihanulAlamHridoyOfficial
 
 interests:
-  - Applied Machine Learning
+  - AI & Machine Learning
   - Human-Centered Computing
   - Software Engineering & Security
-  - Multimodal Sensing & Forecasting
 
 education:
   - area: Computer Science
     institution: University of Iowa (UIOWA)
     date_start: 2025-08-01
+    date_end: current
   - area: BSc in Computer Science and Engineering
     institution: Bangladesh University of Engineering and Technology (BUET)
     date_start: 2016-02-27
