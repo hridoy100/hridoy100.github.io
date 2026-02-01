@@ -142,14 +142,14 @@ awards:
   - title: 15th Nationwide – BUET Admission Test
     date: '2015-11-27'
     awarder: BUET
-  - title: **Runner-up** – National Science Olympiad Bangladesh
+  - title: _Runner-up_ – National Science Olympiad Bangladesh
     date: '2015-02-01'
     awarder: DU
-  - title: **Finalist** - Physics Olympiad Bangladesh
-    date: '2015-02-01'
+  - title: _Finalist_ - Physics Olympiad Bangladesh
+    date: '2015-01-01'
     awarder: DU
-  - title: **Finalist** – Chemistry Olympiad Bangladesh
-    date: '2015-02-01'
+  - title: _Finalist_ – Chemistry Olympiad Bangladesh
+    date: '2013-02-01'
     awarder: DU
     
 
