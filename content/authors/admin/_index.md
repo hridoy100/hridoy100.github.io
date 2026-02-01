@@ -70,7 +70,8 @@ work:
     company_name: University of Iowa
     date_start: 2025-08-01
     summary: |
-      - CS 2230: Data structures Fall 2025
+      - CS 2230: Data structures (Fall 2025)
+      - CS 2230: Data structures (Spring 2026)
   - position: Software Engineer L2
     company_name: Tekarsh – MarginEdge
     date_start: 2022-09-01
@@ -141,7 +142,13 @@ awards:
   - title: 15th Nationwide – BUET Admission Test
     date: '2015-11-27'
     awarder: BUET
-  - title: 3rd – National Science Olympiad
+  - title: **Runner-up** – National Science Olympiad Bangladesh
+    date: '2015-02-01'
+    awarder: DU
+  - title: **Finalist** - Physics Olympiad Bangladesh
+    date: '2015-02-01'
+    awarder: DU
+  - title: **Finalist** – Chemistry Olympiad Bangladesh
     date: '2015-02-01'
     awarder: DU
     
@@ -151,4 +158,4 @@ awards:
   - Follow my research [Google Scholar (Citations 200+)](https://scholar.google.com/citations?user=hk_I6_IAAAAJ&hl=en)
   - Best Paper Honorable Mention at **CHI’21** [(Paper)](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445154)
   - Read my recent work [FogSense](https://hridoy100.github.io/FOGSense/)
-  - Strong foundation in software engineering, machine learning, and health informatics; passionate about designing data-driven systems for impact
+  - Strong foundation in software engineering, machine learning, and health informatics; passionate about designing data-driven systems
