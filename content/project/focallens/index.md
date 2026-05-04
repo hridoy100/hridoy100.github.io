@@ -1,7 +1,7 @@
 ---
 title: FocalLens
 date: 2026-04-15
-external_link: https://arxiv.org/abs/2604.14456
+# external_link: https://arxiv.org/abs/2604.14456
 tags:
   - Human-Computer Interaction
   - Narrative Visualization
