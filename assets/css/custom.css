@@ -130,3 +130,31 @@ p.powered-by.text-center {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+/* Compact Featured Publications cards on the homepage */
+#papers .container {
+  max-width: 72rem;
+}
+
+#papers .grid {
+  gap: 1.5rem;
+}
+
+#papers h2 {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+#papers .grow p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+#papers time,
+#papers .flex-none {
+  font-size: 0.78rem;
+}
+
+#papers img {
+  object-fit: cover;
+}
