@@ -50,6 +50,7 @@ projects:
   - focallens
 
 abstract: >-
+  I am grateful and very thankful to Prof. Naimul Hoque for his guidance and support on this project.
   FocalLens introduces a narrative visualization approach centered on focalization:
   who sees, perceives, narrates, participates in, or observes events in a story.
   The work provides a theoretical grounding for focalization, translates those
@@ -58,7 +59,7 @@ abstract: >-
   how focalization can add an analytical layer for identifying narrative patterns,
   biases, inconsistencies, and literary style.
 
-summary: FocalLens is an interactive narrative visualization tool that uses focalization to show how different characters perceive, narrate, participate in, and observe story events.
+summary: I am grateful and very thankful to Prof. Naimul Hoque for his guidance and support on this project. FocalLens is an interactive narrative visualization tool that uses focalization to show how different characters perceive, narrate, participate in, and observe story events.
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
