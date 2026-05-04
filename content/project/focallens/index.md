@@ -1,5 +1,5 @@
 ---
-title: FocalLens: Visualizing Narratives through Focalization
+title: FocalLens - Visualizing Narratives through Focalization
 
 date: 2026-04-15
 # external_link: https://arxiv.org/abs/2604.14456
