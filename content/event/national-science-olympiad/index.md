@@ -33,7 +33,7 @@ featured: true
 
 image:
   caption: 'Receiving the award at the National Science Olympiad ceremony'
-  focal_point: Smart
+  focal_point: Left
 
 url_code: ''
 url_pdf: ''
