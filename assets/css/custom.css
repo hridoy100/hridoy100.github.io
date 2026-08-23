@@ -158,3 +158,19 @@ p.powered-by.text-center {
 #papers img {
   object-fit: cover;
 }
+
+/* --- Image save/download deterrents --- */
+/* Disable dragging, selection, and the iOS/Android long-press save menu on all images */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none; /* disables the long-press "Save Image" menu on iOS */
+  pointer-events: auto;
+}
