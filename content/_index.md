@@ -78,6 +78,7 @@ sections:
     id: talks
     content:
       title: Events, Talks & Achievements
+      count: 0
       filters:
         folders:
           - event
