@@ -1,16 +1,16 @@
 ---
 title: Undergraduate Thesis Defended
 
-event: Department of Computer Science and Engineering
+event: Department of CSE, BUET
 event_url:
 
-location: Department of CSE
+location: BUET
 address:
   city: Dhaka
   country: Bangladesh
 
 summary: Successfully defended undergraduate thesis on the Maximum Greedy Consensus Tree Problem.
-abstract: "Successfully completed and defended my undergraduate thesis, 'On the Maximum Greedy Consensus Tree Problem', at the Department of Computer Science and Engineering. The work proposed a heuristic for the Maximum Greedy Consensus Tree Problem in phylogenetics."
+abstract: "Successfully completed and defended my undergraduate thesis, 'On the Maximum Greedy Consensus Tree Problem', at the Department of Computer Science and Engineering, BUET. The work proposed a heuristic for the Maximum Greedy Consensus Tree Problem in phylogenetics."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -32,8 +32,8 @@ tags:
 featured: true
 
 image:
-  caption: 'Holding the bound undergraduate thesis at the CSE department'
-  focal_point: Smart
+  caption: 'Holding the bound undergraduate thesis at the CSE department, BUET'
+  focal_point: Top
 
 url_code: ''
 url_pdf: ''
@@ -46,4 +46,4 @@ projects:
   - Bioinformatics
 ---
 
-Successfully completed and defended my **undergraduate thesis**, *"On the Maximum Greedy Consensus Tree Problem"*, at the **Department of Computer Science and Engineering**. The work proposed a heuristic for the Maximum Greedy Consensus Tree Problem in phylogenetics.
+Successfully completed and defended my **undergraduate thesis**, *"On the Maximum Greedy Consensus Tree Problem"*, at the **Department of Computer Science and Engineering, BUET**. The work proposed a heuristic for the Maximum Greedy Consensus Tree Problem in phylogenetics.
