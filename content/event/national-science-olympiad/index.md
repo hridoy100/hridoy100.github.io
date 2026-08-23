@@ -32,7 +32,7 @@ tags:
 featured: true
 
 image:
-  caption: 'National Science Olympiad — medal and certificate'
+  caption: 'Receiving the award at the National Science Olympiad ceremony'
   focal_point: Smart
 
 url_code: ''
@@ -49,4 +49,4 @@ Awarded a **medal and certificate** at the **National Science Olympiad** organiz
 
 The award was presented on stage at the national ceremony by members of the academy.
 
-![Receiving the award at the national ceremony](ceremony.jpg)
+![Medal and certificate from the National Science Olympiad](ceremony.jpg)
