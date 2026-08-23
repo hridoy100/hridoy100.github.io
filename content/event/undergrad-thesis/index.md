@@ -33,7 +33,7 @@ featured: true
 
 image:
   caption: 'Holding the bound undergraduate thesis at the CSE department, BUET'
-  focal_point: Top
+  focal_point: Center
 
 url_code: ''
 url_pdf: ''
