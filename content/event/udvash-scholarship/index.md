@@ -14,12 +14,12 @@ abstract: "Received the Udvash merit scholarship, awarded in recognition of acad
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2014-06-01'
-date_end: '2014-06-01'
+date: '2015-12-31'
+date_end: '2015-12-31'
 all_day: true
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2014-06-01'
+publishDate: '2015-12-31'
 
 authors:
   - admin

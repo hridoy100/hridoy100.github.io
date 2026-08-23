@@ -14,12 +14,12 @@ abstract: "Recognized at the National Science Olympiad organized by the Banglade
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2015-01-01'
-date_end: '2015-01-01'
+date: '2025-11-29'
+date_end: '2025-12-31'
 all_day: true
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2015-01-01'
+publishDate: '2025-11-29'
 
 authors:
   - admin
