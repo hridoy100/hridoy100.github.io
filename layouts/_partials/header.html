@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      {{- $current := . }}
+      {{- range site.Menus.main }}
+        {{- $active := false }}
+        {{- with .URL }}{{ $active = hasPrefix $current.RelPermalink (. | relURL) }}{{ end }}
+        <a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{- end }}
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search (press /)" title="Search (/)">{{ partial "icon.html" "search" }}</button>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="icon-moon">{{ partial "icon.html" "moon" }}</span><span class="icon-sun">{{ partial "icon.html" "sun" }}</span>
+      </button>
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Menu">{{ partial "icon.html" "menu" }}</button>
+    </div>
+  </div>
+</header>

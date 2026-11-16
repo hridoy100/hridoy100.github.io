@@ -1,0 +1,15 @@
+{{- $a := site.GetPage (printf "/authors/%s" site.Params.author) }}
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="name">{{ site.Title }}</div>
+      <div>{{ replace site.Params.footer.copyright "{year}" (now.Format "2006") }}{{ with site.Params.footer.license }} · <a href="{{ site.Params.footer.license_url }}" rel="license">{{ . }}</a>{{ end }}</div>
+    </div>
+    <ul aria-label="Elsewhere">
+      {{- range $a.Params.profiles }}
+      <li><a href="{{ .url }}"{{ if not (hasPrefix .url "mailto:") }} rel="me noopener" target="_blank"{{ end }}>{{ partial "profile-label.html" . }}</a></li>
+      {{- end }}
+      <li><a href="{{ "index.xml" | relURL }}">RSS</a></li>
+    </ul>
+  </div>
+</footer>

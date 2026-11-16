@@ -1,0 +1,15 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    <p class="lede">{{ with .Params.summary }}{{ . | markdownify }}{{ else }}Notes on machine learning, cloud engineering, and bioinformatics.{{ end }}</p>
+  </div>
+</header>
+<div class="wrap">
+  {{- $pages := .Paginate .Pages.ByDate.Reverse }}
+  <ul class="post-list">
+    {{- range $pages.Pages }}{{ partial "post-item.html" . }}{{ end }}
+  </ul>
+  {{- partial "pagination.html" . }}
+</div>
+{{ end }}

@@ -1,4 +1,4 @@
 ---
-title: Blog
-view: article-grid
+title: Writing
+summary: Notes on machine learning, cloud engineering, and bioinformatics.
 ---

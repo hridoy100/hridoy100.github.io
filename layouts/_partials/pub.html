@@ -1,0 +1,17 @@
+{{- /* One publication row. Context: dict page, year (bool), thumb (bool) */ -}}
+{{- $p := .page -}}
+{{- $img := partial "featured.html" $p -}}
+{{- $showThumb := and .thumb $img -}}
+{{- $type := partial "pub-type.html" $p -}}
+<li class="pub{{ if not $showThumb }} no-thumb{{ end }}" data-type="{{ $type | lower }}">
+  {{- if .year }}<div class="pub-year">{{ $p.Date.Year }}</div>{{ end }}
+  <div class="pub-body">
+    <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title | markdownify }}</a></h3>
+    <p class="pub-authors">{{ partial "authors.html" $p }}</p>
+    <p class="pub-venue">{{ with $p.Params.publication }}{{ . | markdownify | replaceRE "</?em>" "" | safeHTML }}{{ else }}{{ $type }}{{ end }}{{ with $p.Params.award }}<span class="pub-badge">{{ . }}</span>{{ end }}</p>
+    {{- partial "pub-links.html" (dict "page" $p "cite" false) }}
+  </div>
+  {{- if $showThumb }}
+  <a class="pub-thumb" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">{{ partial "img.html" (dict "res" $img "w" 300 "h" 200 "anchor" (partial "anchor.html" $p)) }}</a>
+  {{- end }}
+</li>

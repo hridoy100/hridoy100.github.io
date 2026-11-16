@@ -1,0 +1,2 @@
+{{- $src := .Get "src" -}}{{- with .Page.Resources.Get $src }}{{ $src = .RelPermalink }}{{ end -}}
+<audio controls preload="none" src="{{ $src }}" style="width:100%"></audio>

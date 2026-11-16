@@ -1,0 +1,8 @@
+{{- $r := .Page.Resources.Get (.Get "path") -}}
+{{- with $r }}{{ $rows := transform.Unmarshal (dict "delimiter" ",") .Content -}}
+<figure><table>
+  {{- range $i, $row := $rows }}
+  <tr>{{ range $row }}{{ if and (eq $i 0) (eq ($.Get "header") "true") }}<th>{{ . }}</th>{{ else }}<td>{{ . }}</td>{{ end }}{{ end }}</tr>
+  {{- end }}
+</table>{{ with $.Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>
+{{- end -}}

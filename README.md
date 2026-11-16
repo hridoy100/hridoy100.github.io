@@ -27,3 +27,26 @@ Raihanul Alam Hridoy is a Graduate Teaching Assistant in the Computer Science de
 <!-- 
 As a **Software Engineer at Tekarsh - MarginEdge**, Raihan collaborates with MarginEdge to streamline restaurant management through automation and real-time data insights. His work focuses on leveraging machine learning to enhance invoice processing and ordering efficiency, delivering impactful solutions for restaurant operators.
 -->
+
+---
+
+### 🛠️ About this website
+
+The site is built with [Hugo](https://gohugo.io/) (v0.170+) and a small custom theme in this repo (no external theme modules).
+
+| What | Where |
+| --- | --- |
+| Profile, bio, work, education, awards | `content/authors/admin/_index.md` |
+| Publications / projects / events / posts / teaching | `content/<section>/<name>/index.md` (+ `featured.jpg` cover) |
+| Site settings (CV link, portrait, homepage counts, analytics) | `config/_default/params.yaml` |
+| Navigation | `config/_default/menus.yaml` |
+| Templates | `layouts/` |
+| Styles / scripts | `assets/css/main.css`, `assets/js/main.js` |
+
+Run locally:
+
+```bash
+hugo server
+```
+
+Pushing to `main` builds the site and its [Pagefind](https://pagefind.app/) search index, then deploys to GitHub Pages (`.github/workflows/publish.yaml`).

@@ -1,0 +1,9 @@
+{{- /* Context: dict start end (time values; end optional) */ -}}
+{{- $s := .start -}}
+{{- with .end -}}
+  {{- $e := time . -}}
+  {{- if eq ($s.Format "2006-01-02") ($e.Format "2006-01-02") -}}{{ $s.Format "Jan 2, 2006" }}
+  {{- else if eq ($s.Format "2006-01") ($e.Format "2006-01") -}}{{ $s.Format "Jan 2" }}–{{ $e.Format "2, 2006" }}
+  {{- else if eq $s.Year $e.Year -}}{{ $s.Format "Jan 2" }} – {{ $e.Format "Jan 2, 2006" }}
+  {{- else -}}{{ $s.Format "Jan 2, 2006" }} – {{ $e.Format "Jan 2, 2006" }}{{- end -}}
+{{- else -}}{{ $s.Format "Jan 2, 2006" }}{{- end -}}

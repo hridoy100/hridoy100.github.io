@@ -1,0 +1,52 @@
+{{- /* Link pills for a publication. Context: dict page, cite (bool: render inline cite toggle) */ -}}
+{{- $p := .page -}}
+{{- $links := slice -}}
+{{- $seen := dict -}}
+{{- $add := slice
+  (dict "key" "url_pdf" "name" "PDF" "icon" "file")
+  (dict "key" "url_code" "name" "Code" "icon" "code")
+  (dict "key" "url_dataset" "name" "Dataset" "icon" "database")
+  (dict "key" "url_project" "name" "Project" "icon" "link")
+  (dict "key" "url_poster" "name" "Poster" "icon" "file")
+  (dict "key" "url_slides" "name" "Slides" "icon" "slides")
+  (dict "key" "url_source" "name" "Source" "icon" "link")
+  (dict "key" "url_video" "name" "Video" "icon" "play")
+  (dict "key" "external_link" "name" "Website" "icon" "arrow-up-right")
+-}}
+{{- range $item := $add -}}
+  {{- with index $p.Params $item.key -}}
+    {{- $u := . -}}
+    {{- if and (eq $item.key "url_project") (not (strings.Contains $u "://")) }}{{ with site.GetPage (printf "/project/%s" $u) }}{{ $u = .RelPermalink }}{{ end }}{{ end -}}
+    {{- if not (index $seen $u) -}}
+      {{- $links = $links | append (dict "name" $item.name "url" $u "icon" $item.icon) -}}
+      {{- $seen = merge $seen (dict $u true) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $p.Params.doi -}}
+  {{- $u := cond (hasPrefix . "http") . (printf "https://doi.org/%s" .) -}}
+  {{- $links = $links | append (dict "name" "DOI" "url" $u "icon" "link") -}}
+  {{- $seen = merge $seen (dict $u true) -}}
+{{- end -}}
+{{- range $p.Params.links -}}
+  {{- if and .url (not (index $seen .url)) (not (strings.Contains .url "example.org")) -}}
+    {{- $icon := cond (strings.Contains (lower .name) "pdf") "file" (cond (strings.Contains (lower .name) "github") "code" "arrow-up-right") -}}
+    {{- $links = $links | append (dict "name" .name "url" .url "icon" $icon) -}}
+    {{- $seen = merge $seen (dict .url true) -}}
+  {{- end -}}
+{{- end -}}
+{{- $bib := $p.Resources.GetMatch "cite.bib" -}}
+{{- if or $links $bib -}}
+<div class="pub-links">
+  {{- range $links }}
+  <a class="pill" href="{{ .url }}"{{ if strings.Contains .url "://" }} target="_blank" rel="noopener"{{ end }}>{{ partial "icon.html" .icon }}{{ .name }}</a>
+  {{- end }}
+  {{- with $bib }}
+    {{- if $.cite }}
+  <button class="pill" type="button" data-cite-toggle aria-expanded="false" aria-controls="cite-{{ $p.File.ContentBaseName | default $p.File.TranslationBaseName }}">{{ partial "icon.html" "quote" }}Cite</button>
+    {{- else }}
+  <a class="pill" href="{{ .RelPermalink }}" download>{{ partial "icon.html" "quote" }}Cite</a>
+    {{- end }}
+  {{- end }}
+</div>
+{{- end -}}

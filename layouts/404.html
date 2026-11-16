@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="wrap not-found">
+  <h1>404</h1>
+  <p>That page doesn't exist, or it moved when the site was redesigned.</p>
+  <a class="btn btn-primary" href="{{ "/" | relURL }}">{{ partial "icon.html" "arrow-left" }}Back home</a>
+</div>
+{{ end }}

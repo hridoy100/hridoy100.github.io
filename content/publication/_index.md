@@ -1,12 +1,4 @@
 ---
 title: Publications
-cms_exclude: true
-
-# View.
-view: citation
-
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+summary: Papers on human-centered computing, machine learning, and algorithms. My name is highlighted in author lists.
 ---

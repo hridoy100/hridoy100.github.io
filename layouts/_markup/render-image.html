@@ -1,0 +1,10 @@
+{{- $src := .Destination -}}
+{{- $res := .Page.Resources.Get $src -}}
+{{- if not $res }}{{ $res = resources.Get (strings.TrimPrefix "/" $src) }}{{ end -}}
+{{- if $res -}}
+  {{- if .IsBlock -}}<figure>{{- end -}}
+  {{ partial "img.html" (dict "res" $res "w" 900 "alt" .PlainText) }}
+  {{- if .IsBlock -}}{{ with .Title }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>{{- end -}}
+{{- else -}}
+<img src="{{ $src | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- end -}}

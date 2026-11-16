@@ -1,0 +1,10 @@
+{{ define "main" }}
+<header class="page-head"><div class="wrap"><h1>{{ .Title }}</h1></div></header>
+<div class="wrap">
+  <ul class="tag-list" style="gap:.6rem">
+    {{- range .Data.Terms.Alphabetical }}
+    <li><a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} <span style="color:var(--muted)">{{ .Count }}</span></a></li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

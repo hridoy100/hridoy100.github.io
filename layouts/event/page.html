@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article data-pagefind-body>
+  <header class="article-head">
+    <div class="wrap">
+      {{- partial "breadcrumb.html" . }}
+      <h1>{{ .Title }}</h1>
+      <div class="meta">
+        <span>{{ partial "icon.html" "calendar" }}{{ partial "date-range.html" (dict "start" .Date "end" .Params.date_end) }}</span>
+        {{- $loc := slice }}{{ with .Params.location }}{{ $loc = $loc | append . }}{{ end }}{{ with .Params.address.city }}{{ $loc = $loc | append . }}{{ end }}{{ with .Params.address.country }}{{ $loc = $loc | append . }}{{ end }}
+        {{- with $loc }}<span>{{ partial "icon.html" "pin" }}{{ delimit (uniq .) ", " }}</span>{{ end }}
+      </div>
+      {{- with .Params.event }}
+      <p class="lede">{{ if $.Params.event_url }}<a href="{{ $.Params.event_url }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</p>
+      {{- end }}
+      {{- $links := slice }}
+      {{- with .Params.url_slides }}{{ $links = $links | append (dict "name" "Slides" "url" . "icon" "slides") }}{{ end }}
+      {{- with .Params.url_pdf }}{{ $links = $links | append (dict "name" "PDF" "url" . "icon" "file") }}{{ end }}
+      {{- with .Params.url_video }}{{ $links = $links | append (dict "name" "Video" "url" . "icon" "play") }}{{ end }}
+      {{- with .Params.url_code }}{{ $links = $links | append (dict "name" "Code" "url" . "icon" "code") }}{{ end }}
+      {{- with $links }}
+      <div class="pub-links">{{ range . }}<a class="pill" href="{{ .url }}" target="_blank" rel="noopener">{{ partial "icon.html" .icon }}{{ .name }}</a>{{ end }}</div>
+      {{- end }}
+    </div>
+  </header>
+  {{- partial "article-hero.html" . }}
+  <div class="wrap article-body">
+    <div class="prose">{{ with .Content }}{{ . }}{{ else }}{{ .Params.abstract | markdownify }}{{ end }}</div>
+  </div>
+  {{- partial "article-footer.html" . }}
+</article>
+{{ end }}

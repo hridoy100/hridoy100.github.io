@@ -1,0 +1,17 @@
+{{- $tags := .GetTerms "tags" -}}
+{{- $prev := .PrevInSection -}}{{- $next := .NextInSection -}}
+{{- if or $tags $prev $next -}}
+<footer class="article-footer" data-pagefind-ignore>
+  <div class="inner">
+    {{- with $tags }}
+    <ul class="tag-list" aria-label="Tags">{{ range . }}<li><a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+    {{- end }}
+    {{- if or $prev $next }}
+    <nav class="pager" aria-label="More in {{ .Parent.Title }}">
+      {{- with $next }}<a class="prev" href="{{ .RelPermalink }}"><small>Newer</small><span>{{ .Title }}</span></a>{{ end }}
+      {{- with $prev }}<a class="next" href="{{ .RelPermalink }}"><small>Older</small><span>{{ .Title }}</span></a>{{ end }}
+    </nav>
+    {{- end }}
+  </div>
+</footer>
+{{- end -}}

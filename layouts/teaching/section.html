@@ -1,0 +1,13 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.summary }}<p class="lede">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</header>
+<div class="wrap">
+  <div class="card-grid cols-2">
+    {{- range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}

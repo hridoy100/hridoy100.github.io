@@ -1,0 +1,17 @@
+{{- /* Author list with the site owner highlighted. Context: page */ -}}
+{{- $out := slice -}}
+{{- range .Params.authors -}}
+  {{- $name := . -}}
+  {{- $me := false -}}
+  {{- with site.GetPage (printf "/authors/%s" (urlize .)) -}}
+    {{- if .Params.first_name }}{{ $name = .Title }}{{ end -}}
+    {{- $me = or .Params.highlight_name .Params.superuser -}}
+  {{- end -}}
+  {{- if eq $name "Equal contribution" }}{{ continue }}{{ end -}}
+  {{- if $me -}}
+    {{- $out = $out | append (printf `<span class="me">%s</span>` $name) -}}
+  {{- else -}}
+    {{- $out = $out | append (htmlEscape $name) -}}
+  {{- end -}}
+{{- end -}}
+{{- delimit $out ", " | safeHTML -}}

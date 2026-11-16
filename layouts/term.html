@@ -1,0 +1,13 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">{{ .Parent.Title | singularize }}</div>
+    <h1 style="margin-top:.6rem">{{ .Title }}</h1>
+  </div>
+</header>
+<div class="wrap">
+  <ul class="post-list">
+    {{- range .Pages.ByDate.Reverse }}{{ partial "post-item.html" . }}{{ end }}
+  </ul>
+</div>
+{{ end }}

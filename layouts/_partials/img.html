@@ -1,0 +1,25 @@
+{{- /*
+  Responsive, processed <img>.
+  Params: res (resource, required), w (int), h (int, 0 = keep ratio), anchor, alt, class, loading, sizes
+*/ -}}
+{{- $r := .res -}}
+{{- $alt := .alt | default "" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- with $r -}}
+  {{- if in (slice "svg" "svg+xml" "gif") .MediaType.SubType -}}
+<img src="{{ .RelPermalink }}" alt="{{ $alt }}"{{ with $.class }} class="{{ . }}"{{ end }} loading="{{ $loading }}" decoding="async">
+  {{- else -}}
+    {{- $w := $.w | default 800 -}}
+    {{- $h := $.h | default 0 -}}
+    {{- $anchor := $.anchor | default "Smart" -}}
+    {{- $one := "" -}}{{- $two := "" -}}
+    {{- if $h -}}
+      {{- $one = .Process (printf "fill %dx%d %s webp q80" $w $h $anchor) -}}
+      {{- if and (ge .Width (mul $w 2)) (ge .Height (mul $h 2)) -}}{{- $two = .Process (printf "fill %dx%d %s webp q72" (mul $w 2) (mul $h 2) $anchor) -}}{{- end -}}
+    {{- else -}}
+      {{- $one = .Process (printf "resize %dx webp q80" (cond (lt .Width $w) .Width $w)) -}}
+      {{- if ge .Width (mul $w 2) -}}{{- $two = .Process (printf "resize %dx webp q72" (mul $w 2)) -}}{{- end -}}
+    {{- end -}}
+<img src="{{ $one.RelPermalink }}"{{ with $two }} srcset="{{ $one.RelPermalink }} 1x, {{ .RelPermalink }} 2x"{{ end }} width="{{ $one.Width }}" height="{{ $one.Height }}" alt="{{ $alt }}"{{ with $.class }} class="{{ . }}"{{ end }} loading="{{ $loading }}" decoding="async">
+  {{- end -}}
+{{- end -}}

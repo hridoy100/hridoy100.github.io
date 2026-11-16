@@ -1,0 +1,143 @@
+{{ define "main" }}
+{{- $a := site.GetPage (printf "/authors/%s" site.Params.author) }}
+{{- $orgs := $a.Params.organizations }}
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>{{ $a.Title }}</h1>
+        <p class="hero-role">
+          {{- $a.Params.role }}{{ with index $orgs 0 }}, <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ end -}}
+        </p>
+        <div class="hero-bio">{{ $a.Content }}</div>
+        <div class="hero-actions">
+          {{- with site.Params.cv_url }}
+          <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "eye" }}View CV</a>
+          {{- end }}
+          {{- range $a.Params.profiles }}
+            {{- if strings.Contains .url "scholar.google" }}
+          <a class="btn" href="{{ .url }}" target="_blank" rel="noopener">Google Scholar{{ partial "icon.html" "arrow-up-right" }}</a>
+            {{- else if hasPrefix .url "mailto:" }}
+          <a class="btn" href="{{ .url }}">{{ partial "icon.html" "mail" }}Email</a>
+            {{- end }}
+          {{- end }}
+        </div>
+        <ul class="social" aria-label="Profiles">
+          {{- range $a.Params.profiles }}
+            {{- if not (or (hasPrefix .url "mailto:") (strings.Contains .url "scholar.google")) }}
+          <li><a href="{{ .url }}" target="_blank" rel="me noopener">{{ partial "profile-label.html" . }}{{ partial "icon.html" "arrow-up-right" }}</a></li>
+            {{- end }}
+          {{- end }}
+        </ul>
+      </div>
+      {{- with resources.Get site.Params.avatar }}
+      <figure class="portrait">
+        {{ partial "img.html" (dict "res" . "w" 380 "h" 475 "anchor" "Top" "alt" (printf "Portrait of %s" $a.Title) "loading" "eager") }}
+      </figure>
+      {{- end }}
+    </div>
+
+    <div class="facts">
+      {{- with $a.Params.interests }}
+      <div>
+        <h2>Interests</h2>
+        <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      {{- end }}
+      {{- with $a.Params.education }}
+      <div>
+        <h2>Education</h2>
+        <ul>
+          {{- range . }}
+          <li>{{ .area }}<span>{{ .institution }}{{ with .date_start }} · {{ (time .).Year }}–{{ end }}{{ with .date_end }}{{ (time .).Year }}{{ else }}present{{ end }}</span></li>
+          {{- end }}
+        </ul>
+      </div>
+      {{- end }}
+      {{- with $a.Params.work }}
+      <div>
+        <h2>Experience</h2>
+        <ul>
+          {{- range first 3 . }}
+          <li>{{ .position }}<span>{{ .company_name }} · {{ (time .date_start).Year }}–{{ with .date_end }}{{ (time .).Year }}{{ else }}present{{ end }}</span></li>
+          {{- end }}
+        </ul>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{- $cfg := site.Params.home }}
+
+{{- /* Selected publications */}}
+{{- $featured := where (where site.RegularPages "Section" "publication") "Params.featured" true }}
+{{- with $featured }}
+<section class="section" id="publications">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Selected publications</h2>
+      <a class="more-link" href="{{ "publication/" | relURL }}">All publications{{ partial "icon.html" "arrow-right" }}</a>
+    </div>
+    <ul class="pub-list">
+      {{- range .ByWeight }}
+        {{- partial "pub.html" (dict "page" . "year" true "thumb" true) }}
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+
+{{- /* Projects */}}
+{{- $projects := where site.RegularPages "Section" "project" }}
+{{- with $projects }}
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <a class="more-link" href="{{ "project/" | relURL }}">All {{ len . }} projects{{ partial "icon.html" "arrow-right" }}</a>
+    </div>
+    <div class="card-grid">
+      {{- range first ($cfg.projects_count | default 6) .ByDate.Reverse }}
+        {{- partial "card.html" . }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+{{- /* Achievements & talks */}}
+{{- $events := (where site.RegularPages "Section" "event").ByDate.Reverse }}
+{{- with $events }}
+<section class="section" id="achievements">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Achievements &amp; talks</h2>
+      <a class="more-link" href="{{ "event/" | relURL }}">View all{{ partial "icon.html" "arrow-right" }}</a>
+    </div>
+    <ul class="event-list">
+      {{- $n := $cfg.events_count | default 0 }}
+      {{- $list := cond (gt $n 0) (first $n .) . }}
+      {{- range $list }}{{ partial "event.html" . }}{{ end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+
+{{- /* Writing */}}
+{{- $posts := (where site.RegularPages "Section" "post").ByDate.Reverse }}
+{{- with $posts }}
+<section class="section" id="writing">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Writing</h2>
+      <a class="more-link" href="{{ "post/" | relURL }}">All posts{{ partial "icon.html" "arrow-right" }}</a>
+    </div>
+    <ul class="post-list">
+      {{- range first ($cfg.posts_count | default 3) . }}{{ partial "post-item.html" . }}{{ end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+{{ end }}

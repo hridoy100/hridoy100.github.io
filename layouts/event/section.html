@@ -1,0 +1,13 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    <p class="lede">{{ with .Params.summary }}{{ . | markdownify }}{{ else }}Conferences, talks, awards, and milestones along the way.{{ end }}</p>
+  </div>
+</header>
+<div class="wrap">
+  <ul class="event-list">
+    {{- range .Pages.ByDate.Reverse }}{{ partial "event.html" . }}{{ end }}
+  </ul>
+</div>
+{{ end }}

@@ -1,0 +1,11 @@
+{{- $u := .url -}}
+{{- with .label }}{{ if eq . "E-mail Me" }}Email{{ else }}{{ . }}{{ end }}{{ else -}}
+{{- if hasPrefix $u "mailto:" }}Email
+{{- else if strings.Contains $u "github.com" }}GitHub
+{{- else if strings.Contains $u "linkedin.com" }}LinkedIn
+{{- else if strings.Contains $u "scholar.google" }}Google Scholar
+{{- else if strings.Contains $u "facebook.com" }}Facebook
+{{- else if strings.Contains $u "youtube.com" }}YouTube
+{{- else if or (strings.Contains $u "twitter.com") (strings.Contains $u "x.com") }}X
+{{- else }}{{ (urls.Parse $u).Host }}{{ end -}}
+{{- end -}}

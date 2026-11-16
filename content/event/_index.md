@@ -1,13 +1,4 @@
 ---
-title: Events, Talks & Achievements
-cms_exclude: true
-#url: talk
-
-# View
-view: card
-
-# Optional cover image (relative to `assets/media/` folder).
-image:
-  caption: ''
-  filename: ''
+title: Achievements & Talks
+summary: Conferences, talks, awards, and milestones along the way.
 ---

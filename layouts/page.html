@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article data-pagefind-body>
+  <header class="article-head">
+    <div class="wrap">
+      {{- partial "breadcrumb.html" . }}
+      <h1>{{ .Title }}</h1>
+      {{- with .Params.summary }}<p class="lede">{{ . | markdownify }}</p>{{ end }}
+      {{- if and (not .Date.IsZero) (in (slice "post" "teaching") .Section) }}
+      <div class="meta">
+        <span>{{ partial "icon.html" "calendar" }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></span>
+        {{- if eq .Section "post" }}<span>{{ partial "icon.html" "clock" }}{{ .ReadingTime }} min read</span>{{ end }}
+      </div>
+      {{- end }}
+    </div>
+  </header>
+  {{- partial "article-hero.html" . }}
+  <div class="wrap article-body">
+    {{- if and (eq .Section "post") (gt .WordCount 900) (.TableOfContents | strings.Contains "<li>") }}
+    <details class="toc" style="margin-bottom:2rem"><summary>On this page</summary>{{ .TableOfContents }}</details>
+    {{- end }}
+    <div class="prose">{{ .Content }}</div>
+  </div>
+  {{- partial "article-footer.html" . }}
+</article>
+{{ end }}

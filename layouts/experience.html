@@ -1,0 +1,92 @@
+{{ define "main" }}
+<div data-pagefind-body>
+{{- $a := site.GetPage (printf "/authors/%s" site.Params.author) }}
+<header class="page-head">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.summary }}<p class="lede">{{ . | markdownify }}</p>{{ end }}
+    {{- with site.Params.cv_url }}<div class="hero-actions" style="margin-top:1.5rem"><a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "eye" }}View full CV</a></div>{{ end }}
+  </div>
+</header>
+
+{{- with $a.Params.work }}
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><h2>Work</h2></div>
+    <ol class="timeline">
+      {{- range . }}
+      <li>
+        <div class="when">{{ (time .date_start).Format "Jan 2006" }} – {{ with .date_end }}{{ (time .).Format "Jan 2006" }}{{ else }}Present{{ end }}</div>
+        <div>
+          <h3>{{ .position }}</h3>
+          <p class="where">{{ .company_name }}{{ with .company_url }} · <a href="{{ . }}">website</a>{{ end }}</p>
+          {{- with .summary }}<div class="body">{{ . | markdownify }}</div>{{ end }}
+        </div>
+      </li>
+      {{- end }}
+    </ol>
+  </div>
+</section>
+{{- end }}
+
+{{- with $a.Params.education }}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Education</h2></div>
+    <ol class="timeline">
+      {{- range . }}
+      <li>
+        <div class="when">{{ with .date_start }}{{ (time .).Format "Jan 2006" }}{{ end }} – {{ with .date_end }}{{ (time .).Format "Jan 2006" }}{{ else }}Present{{ end }}</div>
+        <div>
+          <h3>{{ .area }}</h3>
+          <p class="where">{{ .institution }}</p>
+          {{- with .summary }}<div class="body">{{ . | markdownify }}</div>{{ end }}
+          {{- with .button }}<a class="pill" href="{{ .url }}" target="_blank" rel="noopener">{{ partial "icon.html" (.icon | default "arrow-up-right") }}{{ .text }}</a>{{ end }}
+        </div>
+      </li>
+      {{- end }}
+    </ol>
+  </div>
+</section>
+{{- end }}
+
+<section class="section">
+  <div class="wrap two-col">
+    {{- with $a.Params.awards }}
+    <div>
+      <div class="section-head"><h2>Awards</h2></div>
+      <ul class="award-list">
+        {{- range sort . "date" "desc" }}
+        <li>
+          <div class="title">{{ .title | markdownify }}{{ with .awarder }}<span>{{ . }}</span>{{ end }}</div>
+          {{- with .date }}<time datetime="{{ . }}">{{ (time .).Format "2006" }}</time>{{ end }}
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+    <div>
+      {{- with $a.Params.skills }}
+      <div class="section-head"><h2>Skills &amp; hobbies</h2></div>
+      <div class="skill-groups">
+        {{- range . }}
+        <div>
+          <h3>{{ .name }}</h3>
+          <ul class="tag-list">{{ range .items }}<li><span class="tag">{{ .name }}</span></li>{{ end }}</ul>
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+      {{- with $a.Params.languages }}
+      <div class="section-head" style="margin-top:3rem"><h2>Languages</h2></div>
+      <ul class="lang-list">
+        {{- range . }}
+        <li><div class="row"><span>{{ .name }}</span><span>{{ .percent }}%</span></div><div class="bar"><i style="width:{{ .percent }}%"></i></div></li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+  </div>
+</section>
+</div>
+{{ end }}

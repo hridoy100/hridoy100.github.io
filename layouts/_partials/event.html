@@ -1,0 +1,11 @@
+{{- $img := partial "featured.html" . -}}
+<li class="event">
+  <div class="event-media">
+    {{- with $img }}{{ partial "img.html" (dict "res" . "w" 264 "h" 264 "anchor" (partial "anchor.html" $) "alt" "") }}{{ end }}
+  </div>
+  <div>
+    <div class="meta">{{ partial "date-range.html" (dict "start" .Date "end" .Params.date_end) }}{{ with .Params.location }} · {{ . }}{{ end }}</div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{- with .Params.summary }}<p class="summary">{{ . | plainify }}</p>{{ end }}
+  </div>
+</li>

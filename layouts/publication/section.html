@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{- $pubs := .Pages.ByDate.Reverse }}
+<header class="page-head">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+    <p class="lede">{{ with .Params.summary }}{{ . | markdownify }}{{ else }}Papers on human-centered computing, machine learning, and algorithms. My name is highlighted in author lists.{{ end }}</p>
+    {{- $a := site.GetPage (printf "/authors/%s" site.Params.author) }}
+    {{- range $a.Params.profiles }}{{ if strings.Contains .url "scholar.google" }}
+    <p class="meta"><a href="{{ .url }}" target="_blank" rel="noopener">Google Scholar profile{{ partial "icon.html" "arrow-up-right" }}</a></p>
+    {{- end }}{{ end }}
+  </div>
+</header>
+<div class="wrap">
+  {{- $types := slice }}
+  {{- range $pubs }}{{ $types = $types | append (partial "pub-type.html" .) }}{{ end }}
+  {{- $types = $types | uniq | sort }}
+  {{- if gt (len $types) 1 }}
+  <div class="filters" data-filters role="group" aria-label="Filter by type">
+    <button class="pill" type="button" data-filter="all" aria-pressed="true">All <span class="count">{{ len $pubs }}</span></button>
+    {{- range $types }}
+    <button class="pill" type="button" data-filter="{{ . | lower }}" aria-pressed="false">{{ . }}</button>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- range $pubs.GroupByDate "2006" }}
+  <section class="year-group">
+    <h2 class="year-label">{{ .Key }}</h2>
+    <ul class="pub-list">
+      {{- range .Pages }}{{ partial "pub.html" (dict "page" . "year" false "thumb" true) }}{{ end }}
+    </ul>
+  </section>
+  {{- end }}
+</div>
+{{ end }}

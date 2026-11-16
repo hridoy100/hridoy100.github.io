@@ -1,0 +1,8 @@
+{{- /* Plain-text summary: front matter `summary`, else body text minus a leading link-only paragraph. */ -}}
+{{- $s := "" -}}
+{{- with .Params.summary -}}
+  {{- $s = . | plainify -}}
+{{- else -}}
+  {{- $s = .Content | replaceRE `(?s)^\s*<p>\s*<a [^>]*>[^<]*</a>\s*</p>` "" | replaceRE `(?s)<h[1-6][^>]*>.*?</h[1-6]>` "" | plainify -}}
+{{- end -}}
+{{- return ($s | htmlUnescape | strings.TrimSpace | replaceRE `\s+` " " | truncate 240) -}}

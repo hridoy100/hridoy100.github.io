@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article data-pagefind-body>
+  <header class="article-head">
+    <div class="wrap">
+      {{- partial "breadcrumb.html" . }}
+      <div class="eyebrow">Project{{ if not .Date.IsZero }} · {{ .Date.Format "2006" }}{{ end }}</div>
+      <h1 style="margin-top:.6rem">{{ .Title }}</h1>
+      {{- with .Params.summary }}<p class="lede">{{ . | markdownify }}</p>{{ end }}
+      {{- $links := slice }}
+      {{- with .Params.external_link }}{{ $links = $links | append (dict "name" "Visit project" "url" . "icon" "arrow-up-right") }}{{ end }}
+      {{- with .Params.url_code }}{{ $links = $links | append (dict "name" "Code" "url" . "icon" "code") }}{{ end }}
+      {{- with .Params.url_pdf }}{{ $links = $links | append (dict "name" "PDF" "url" . "icon" "file") }}{{ end }}
+      {{- with .Params.url_video }}{{ $links = $links | append (dict "name" "Video" "url" . "icon" "play") }}{{ end }}
+      {{- with .Params.url_slides }}{{ $links = $links | append (dict "name" "Slides" "url" . "icon" "slides") }}{{ end }}
+      {{- with $links }}
+      <div class="pub-links">{{ range . }}<a class="pill" href="{{ .url }}" target="_blank" rel="noopener">{{ partial "icon.html" .icon }}{{ .name }}</a>{{ end }}</div>
+      {{- end }}
+    </div>
+  </header>
+  {{- partial "article-hero.html" . }}
+  <div class="wrap article-body">
+    <div class="prose">{{ .Content }}</div>
+    {{- $related := where (where site.RegularPages "Section" "publication") "Params.projects" "intersect" (slice .File.ContentBaseName) }}
+    {{- with $related }}
+    <section style="margin-top:3rem">
+      <div class="section-head" style="margin-bottom:1rem"><h2 style="font-size:1.4rem">Related publications</h2></div>
+      <ul class="pub-list">{{ range . }}{{ partial "pub.html" (dict "page" . "year" false "thumb" false) }}{{ end }}</ul>
+    </section>
+    {{- end }}
+  </div>
+  {{- partial "article-footer.html" . }}
+</article>
+{{ end }}

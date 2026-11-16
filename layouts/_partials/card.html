@@ -1,0 +1,19 @@
+{{- /* Project / teaching card. Context: page */ -}}
+{{- $img := partial "featured.html" . -}}
+{{- $ext := .Params.external_link | default "" -}}
+{{- $href := cond (gt (len $ext) 0) $ext .RelPermalink -}}
+{{- $tag := index (.Params.tags | default slice) 0 -}}
+<article class="card">
+  {{- if $img }}
+  <div class="card-media">{{ partial "img.html" (dict "res" $img "w" 640 "h" 400 "anchor" (partial "anchor.html" .) "alt" "") }}</div>
+  {{- else }}
+  <div class="card-media placeholder" aria-hidden="true">{{ substr .Title 0 1 }}</div>
+  {{- end }}
+  <div class="card-body">
+    {{- with $tag }}<div class="eyebrow">{{ . }}</div>{{ end }}
+    <h3><a href="{{ $href }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}>{{ .Title }}{{ if $ext }}{{ partial "icon.html" "arrow-up-right" }}{{ end }}</a></h3>
+    {{- $sum := partial "summary.html" . }}
+    {{- with $sum }}<p class="summary">{{ . }}</p>{{ end }}
+    {{- if not .Date.IsZero }}<div class="meta">{{ .Date.Format "2006" }}</div>{{ end }}
+  </div>
+</article>

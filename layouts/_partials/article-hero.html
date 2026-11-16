@@ -1,0 +1,7 @@
+{{- $img := partial "featured.html" . -}}
+{{- if and $img (not .Params.image.preview_only) -}}
+<figure class="article-hero">
+  {{ partial "img.html" (dict "res" $img "w" 880 "alt" (.Params.image.caption | default .Title) "loading" "eager") }}
+  {{- with .Params.image.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>
+{{- end -}}

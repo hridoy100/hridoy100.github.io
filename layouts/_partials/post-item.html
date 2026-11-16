@@ -1,0 +1,10 @@
+{{- $img := partial "featured.html" . -}}
+<li class="post-item{{ if not $img }} no-thumb{{ end }}">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+  <div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{- $sum := partial "summary.html" . }}
+    {{- with $sum }}<p>{{ . | truncate 200 }}</p>{{ end }}
+  </div>
+  {{- with $img }}<div class="thumb">{{ partial "img.html" (dict "res" . "w" 240 "h" 180 "anchor" (partial "anchor.html" $) "alt" "") }}</div>{{ end }}
+</li>

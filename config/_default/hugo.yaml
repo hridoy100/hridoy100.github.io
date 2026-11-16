@@ -1,56 +1,53 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Hugo configuration — custom theme (no external theme modules).
+# Docs: https://gohugo.io/configuration/
 
-# Website name
 title: Raihanul Alam Hridoy
-# Website URL
 baseURL: 'https://hridoy100.github.io/'
 
-############################
-## LANGUAGE
-############################
-
 defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
 removePathAccents: true
 
-############################
-## ADVANCED
-############################
-
-build:
-  writeStats: true
 enableGitInfo: true
-summaryLength: 30
-pagination:
-  pagerSize: 10
 enableEmoji: true
 enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-permalinks:
-  authors: '/author/:slug/'
-disableAliases: true
+summaryLength: 30
+
+pagination:
+  pagerSize: 12
+
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
+  home: [HTML, RSS]
   section: [HTML, RSS]
-imaging:
-  resampleFilter: lanczos
-  quality: 90
-  anchor: smart
-timeout: 600000
+  taxonomy: [HTML]
+  term: [HTML]
+
 taxonomies:
   author: authors
   tag: tags
   publication_type: publication_types
+
+imaging:
+  resampleFilter: lanczos
+  jpeg:
+    quality: 82
+  webp:
+    quality: 82
+  anchor: smart
+
 markup:
-  _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+      attribute:
+        block: true
   highlight:
+    noClasses: false
     lineNos: false
-security:
-  _merge: deep
-sitemap:
-  _merge: deep
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+timeout: 600s

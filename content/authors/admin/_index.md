@@ -154,8 +154,9 @@ awards:
     
 
 ---
-## About Me
-  - Follow my research [Google Scholar (Citations 200+)](https://scholar.google.com/citations?user=hk_I6_IAAAAJ&hl=en)
-  - Best Paper Honorable Mention at **CHI’21** [(Paper)](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445154)
-  - Read my recent work [FogSense](https://hridoy100.github.io/FOGSense/)
-  - Strong foundation in software engineering, machine learning, and health informatics; passionate about designing data-driven systems
+
+I'm a graduate student and teaching assistant in Computer Science at the University of Iowa. My work spans machine learning, human-centered computing, and security, from wearable sensing for Parkinson's disease to tools that help people analyze stories. Before graduate school I spent five years building production software at Tekarsh – MarginEdge and REVE Systems.
+
+- Follow my research on [Google Scholar](https://scholar.google.com/citations?user=hk_I6_IAAAAJ&hl=en) (200+ citations)
+- Best Paper Honorable Mention at **CHI '21** ([paper](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445154))
+- Read my recent work on [FOGSense](https://hridoy100.github.io/FOGSense/) and [FocalLens](https://arxiv.org/abs/2604.14456)

@@ -20,6 +20,7 @@ publication: '*Proceedings of the 2021 CHI conference on human factors in comput
 
 
 featured: true
+award: Best Paper Honorable Mention
 weight: 50
 
 tags:

@@ -1,0 +1,4 @@
+{{- /* Map Hugo Blox style focal_point values to Hugo image anchors. */ -}}
+{{- $fp := .Params.image.focal_point | default "Smart" -}}
+{{- $valid := slice "Smart" "Center" "TopLeft" "Top" "TopRight" "Left" "Right" "BottomLeft" "Bottom" "BottomRight" -}}
+{{- return (cond (in $valid $fp) $fp "Smart") -}}

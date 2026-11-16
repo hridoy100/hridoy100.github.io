@@ -1,0 +1,4 @@
+{{- /* Returns the page's featured image resource (featured.*), or nil. */ -}}
+{{- $r := .Resources.GetMatch "featured.*" -}}
+{{- if not $r }}{{ with .Params.image.filename }}{{ $r = resources.Get (printf "media/%s" .) }}{{ end }}{{ end -}}
+{{- return $r -}}

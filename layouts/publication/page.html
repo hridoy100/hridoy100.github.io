@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{- $type := partial "pub-type.html" . }}
+<article data-pagefind-body>
+  <header class="article-head">
+    <div class="wrap">
+      {{- partial "breadcrumb.html" . }}
+      <div class="eyebrow">{{ $type }} · {{ .Date.Format "2006" }}</div>
+      <h1 style="margin-top:.6rem">{{ .Title | markdownify }}</h1>
+      <p class="pub-authors">{{ partial "authors.html" . }}</p>
+      <p class="pub-venue">{{ with .Params.publication }}{{ . | markdownify | replaceRE "</?em>" "" | safeHTML }}{{ end }}{{ with .Params.award }}<span class="pub-badge">{{ . }}</span>{{ end }}</p>
+      {{- partial "pub-links.html" (dict "page" . "cite" true) }}
+      {{- with .Resources.GetMatch "cite.bib" }}
+      {{- $id := printf "cite-%s" ($.File.ContentBaseName | default $.File.TranslationBaseName) }}
+      <div class="cite-box" id="{{ $id }}">
+        <pre id="{{ $id }}-text">{{ .Content | strings.TrimSpace }}</pre>
+        <button class="pill copy" type="button" data-copy="{{ $id }}-text">Copy</button>
+      </div>
+      {{- end }}
+    </div>
+  </header>
+  {{- partial "article-hero.html" . }}
+  <div class="wrap article-body">
+    {{- with .Params.abstract }}
+    <section class="abstract">
+      <h2>Abstract</h2>
+      <div class="prose">{{ . | markdownify }}</div>
+    </section>
+    {{- end }}
+    {{- with .Content }}
+    <div class="prose" style="margin-top:2.5rem">{{ . }}</div>
+    {{- end }}
+  </div>
+  {{- partial "article-footer.html" . }}
+</article>
+{{ end }}
