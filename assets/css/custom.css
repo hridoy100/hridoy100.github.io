@@ -193,6 +193,25 @@ section.blox-collection .mt-10.flex.justify-center {
   width: 2.5rem;
   height: 2.5rem;
 }
+/* Institution logo on a white disc so crests read well on the dark hero. */
+.resume-biography .hero-edu-logo {
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 3px;
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.25), 0 0 0 1px rgb(255 255 255 / 0.15);
+  transition: transform 0.25s;
+}
+.resume-biography .hero-edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 9999px;
+}
+.resume-biography .hero-edu-card:hover .hero-edu-logo {
+  transform: scale(1.06);
+}
 .resume-biography .hero-edu-card p.text-xl {
   font-size: 1.05rem;
   line-height: 1.35;

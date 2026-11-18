@@ -49,9 +49,11 @@ interests:
 education:
   - area: Computer Science
     institution: University of Iowa (UIOWA)
+    logo: logos/uiowa.svg
     date_start: 2025-08-01
   - area: BSc in Computer Science and Engineering
     institution: Bangladesh University of Engineering and Technology (BUET)
+    logo: logos/buet.svg
     date_start: 2016-02-27
     date_end: 2021-02-26
     summary: |
