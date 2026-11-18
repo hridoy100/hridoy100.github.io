@@ -13,8 +13,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'BUET'
-    description: "Full-stack Software Engineer with expertise in Java, Spring Boot, AWS, and React. Passionate about building scalable applications and exploring machine learning, human-computer interaction, and bioinformatics. Committed to developing data-driven solutions and impactful technologies."
+    org_name: 'University of Iowa'
+    description: "Graduate Teaching Assistant in Computer Science at the University of Iowa, researching machine learning, human-centered computing, and security. Former full-stack software engineer (Java, Spring Boot, AWS, React)."
     twitter: ''
   analytics:
     google_analytics: 'G-08PK28QG2G'
@@ -31,7 +31,7 @@ marketing:
 #header:
 #  navbar:
 #    enable: true
-#    blox: "navbar"
+#    block: "navbar"
 #    fixed_to_top: true
 #    show_search: true
 #    show_theme_chooser: true
@@ -43,7 +43,7 @@ header:
     # Display the navigation bar?
     enable: true
     # Choose a built-in navigation blox or create your own
-    blox: "navbar"
+    block: "navbar"
     # Align menu links: `left`, `center`, or `right`
     align: "center"
     # Fix the navigation bar to the top of the page
@@ -71,6 +71,8 @@ header:
 
 # Site footer
 footer:
+  # Custom footer: layouts/_partials/components/footers/custom.html
+  block: custom
   copyright:
     notice: '© {year} Raihanul Alam Hridoy'
     license:
@@ -99,4 +101,3 @@ params:
   last_updated: '2025-05-11'
   customCSS:
     - css/custom.css
-

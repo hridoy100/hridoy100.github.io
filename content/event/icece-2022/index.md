@@ -35,10 +35,6 @@ image:
   caption: 'ICECE 2022 author registration kit'
   focal_point: Smart
 
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
 
 slides: ""
 

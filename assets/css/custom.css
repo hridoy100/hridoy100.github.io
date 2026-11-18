@@ -1,52 +1,282 @@
-/* Reduce padding on the biography block */
-.resume-biography #profile {
-    padding-top: 0 !important;
-    padding-bottom: 12px !important;
-    padding-left: 10px;
-    padding-right: 10px;
+/* ==========================================================================
+   Site customizations on top of Hugo Blox (blox-tailwind v0.10).
+   Colors use the theme's primary palette (emerald) via --color-primary-*.
+   ========================================================================== */
+
+/* ---------- Homepage section spacing ---------- */
+
+/* Theme default is 96px above and below every section (~230px between
+   neighbours). Halve it so the page reads as one flow. */
+section.hbb-section {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+@media (min-width: 1024px) {
+  section.hbb-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+section.hbb-section .container.py-5 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
+/* Collection sections (Publications, Projects, Events, Posts): keep the
+   gap from one section's last card to the next heading short. */
+section.blox-collection {
+  padding-top: 2rem !important;
+  padding-bottom: 1.75rem !important;
+}
+
+/* Divider between consecutive collection sections: a hairline that fades
+   out at both ends, broken at the centre by a small emerald diamond. */
+section.blox-collection + section.blox-collection {
+  --divider-line: color-mix(in srgb, var(--color-primary-600) 45%, transparent);
+  --divider-dot: var(--color-primary-600);
+}
+.dark section.blox-collection + section.blox-collection {
+  --divider-line: color-mix(in srgb, var(--color-primary-400) 40%, transparent);
+  --divider-dot: var(--color-primary-400);
+}
+section.blox-collection + section.blox-collection::before,
+section.blox-collection + section.blox-collection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  pointer-events: none;
+}
+section.blox-collection + section.blox-collection::before {
+  width: min(70%, 36rem);
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--divider-line) 30%,
+    var(--divider-line) calc(50% - 14px),
+    transparent calc(50% - 14px),
+    transparent calc(50% + 14px),
+    var(--divider-line) calc(50% + 14px),
+    var(--divider-line) 70%,
+    transparent
+  );
+}
+section.blox-collection + section.blox-collection::after {
+  width: 7px;
+  height: 7px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  margin-top: 0.5px;
+  border-radius: 1px;
+  background: var(--divider-dot);
+}
+
+/* "See all ..." archive button row */
+section.blox-collection .container.pb-5 {
+  padding-bottom: 0 !important;
+}
+section.blox-collection .mt-10.flex.justify-center {
+  margin-top: 1.5rem !important;
+}
+
+/* ---------- Hero (resume-biography-3) ---------- */
+
+/* Calmer vertical rhythm than the theme default (py-32 on large screens). */
 #section-resume-biography-3 {
   padding-top: 0 !important;
-  padding-bottom: 2rem;  /* keep bottom spacing */
+}
+#section-resume-biography-3 > .resume-biography,
+#section-resume-biography-3 .resume-biography {
+  padding-top: 2rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
-/* Tweak padding & margin inside the "About Me" content */
-.flex-auto.max-w-prose {
-  margin-top: 0 !important;   /* default md:mt-12 = ~3rem */
-  max-width: 70ch;                 /* optional: control text width */
+/* Name: one or two lines instead of a towering headline. */
+.resume-biography h1 {
+  font-size: clamp(1.75rem, 2.3vw, 2.15rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+  line-height: 1.15 !important;
+}
+.resume-biography h1 + p,
+.resume-biography .space-y-3 > p.text-2xl {
+  font-size: 1.1rem !important;
+}
+.resume-biography .space-y-3 > :not(:first-child) {
+  margin-top: 0.35rem !important;
+}
+.resume-biography .space-y-3 > p.text-lg {
+  font-size: 1rem !important;
 }
 
-.flex-auto.max-w-prose > .pt-2 {
-  padding-top: 0.5rem !important;  /* default pt-2 = 0.5rem, adjust as needed */
+/* Section headings inside the hero ("About Me", "Education", "Interests"). */
+.resume-biography h2,
+.resume-biography h3.text-xl {
+  font-size: 1.35rem !important;
+}
+/* Layout from the override in layouts/_partials/hbx/blocks/resume-biography-3. */
+@media (min-width: 768px) {
+  .resume-biography .hero-grid {
+    align-items: center;
+  }
+}
+.resume-biography .md\:space-y-8 > :not(:last-child) {
+  margin-bottom: 1rem !important;
+}
+.resume-biography .md\:space-y-8 > :not(:first-child) {
+  margin-top: 0 !important;
+}
+.resume-biography .hero-block {
+  margin-bottom: 1.5rem;
+}
+/* View CV sits at the end of the About Me heading row. */
+.resume-biography .hero-heading .hero-cv {
+  margin-left: auto;
+}
+.resume-biography a.hero-cv[href*="drive.google.com"] {
+  padding: 0.5rem 1.1rem !important;
+  font-size: 0.95rem !important;
+  border-radius: 0.65rem;
+}
+/* Social icons: slightly smaller circles. */
+.resume-biography .md\:col-span-4 .flex-wrap.gap-4 {
+  gap: 0.75rem;
+}
+.resume-biography .md\:col-span-4 .flex-wrap.gap-4 > a {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.resume-biography .md\:col-span-4 .flex-wrap.gap-4 > a svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.resume-biography .hero-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.9rem;
+}
+.resume-biography .hero-heading > div:first-child {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
 }
 
 .bio-text ul {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.bio-text li {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.2rem !important;
+}
+.resume-biography .bio-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
-.cv-button {
-  display: block;
-  margin: 1rem auto;
-  text-align: center;
+/* Education: compact two-column cards. */
+.resume-biography .hero-edu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .resume-biography .hero-edu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.resume-biography .hero-edu-card {
+  padding: 1rem 1.15rem;
+}
+.resume-biography .hero-edu-card .w-12 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.resume-biography .hero-edu-card p.text-xl {
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+.resume-biography .hero-edu-card p.mt-1 {
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
 }
 
-/* Keep the button size natural and center it */
+/* Interests: centred chips under the social icons. */
+.resume-biography .hero-interests {
+  padding-top: 1rem;
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+}
+.resume-biography .hero-interests-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary-300);
+}
+.resume-biography .hero-chip {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  color: var(--color-primary-100);
+  background: rgb(255 255 255 / 0.06);
+  border: 1px solid color-mix(in srgb, var(--color-primary-400) 35%, transparent);
+  transition: background 0.2s, border-color 0.2s;
+}
+.resume-biography .hero-chip:hover {
+  background: color-mix(in srgb, var(--color-primary-400) 18%, transparent);
+  border-color: var(--color-primary-400);
+}
+
+/* Avatar a bit smaller so the left column isn't taller than the right. */
+.resume-biography .avatar-wrapper {
+  position: relative;
+  width: 200px !important;
+  height: 200px !important;
+  max-width: 70vw;
+  max-height: 70vw;
+  margin-bottom: 0 !important;
+}
+.resume-biography .avatar-wrapper img.avatar {
+  width: 100% !important;
+  height: 100% !important;
+}
+.resume-biography .avatar-wrapper .avatar-emoji {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  line-height: 1;
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.25);
+}
+.dark .resume-biography .avatar-wrapper .avatar-emoji {
+  background: rgb(31 41 55);
+}
+
+/* CV button: eye icon ("view") instead of the download icon. */
 .resume-biography a[href*="drive.google.com"] {
   display: inline-flex !important;
-  align-items: center;          /* vertical center for icon + text */
+  align-items: center;
   justify-content: center;
-  margin: 1rem auto !important;
   width: fit-content;
+  padding: 0.8rem 1.5rem !important;
+  font-size: 1rem !important;
 }
-
-/* Hide the old download SVG inside the link */
 .resume-biography a[href*="drive.google.com"] svg {
   display: none !important;
 }
-
-/* Add a clean eye icon before text */
 .resume-biography a[href*="drive.google.com"]::before {
   content: "";
   display: inline-block;
@@ -54,123 +284,155 @@
   height: 1.25rem;
   margin-right: 0.5rem;
   background-color: currentColor;
-
-  /* vector eye mask (inline SVG) */
   -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='black' stroke-width='2' d='M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12zm11 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8z'/></svg>") no-repeat center / contain;
           mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='black' stroke-width='2' d='M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12zm11 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8z'/></svg>") no-repeat center / contain;
 }
 
-/* Optional: shift slightly to the right */
-.resume-biography a[href*="drive.google.com"] {
-  margin-left: 2rem !important;
+/* ---------- Cards (publications, projects, events) ---------- */
+
+/* Keep hover accents on-brand (theme default is blue). */
+[role="article"]:hover h3,
+[role="article"] h3 a:hover {
+  color: var(--color-primary-600) !important;
+}
+.dark [role="article"]:hover h3,
+.dark [role="article"] h3 a:hover {
+  color: var(--color-primary-400) !important;
+}
+[role="article"]:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08) !important;
+}
+[role="article"]:focus-within {
+  --tw-ring-color: var(--color-primary-500) !important;
 }
 
-/* --- Avatar size --- */
-.resume-biography .avatar-wrapper img.avatar {
-  width: 300px !important;
-  height: 300px !important;
-
-  /* keep round & cover behaviour */
-  object-fit: cover;
-  border-radius: 50%;
-
-  /* be responsive on small screens */
-  max-width: 90vw;
-  max-height: 90vw;
-}
-
-/* --- Emoji badge on avatar --- */
-.resume-biography .avatar-wrapper .avatar-emoji {
-  font-size: 3rem;         /* scale emoji */
-  position: absolute;
-  bottom: 25px;            /* move up from bottom edge */
-  right: 20px;             /* move left from right edge */
-  line-height: 1;
-}
-
-/* --- Emoji badge on avatar --- */
-.dark .avatar-emoji {
-    background-color: transparent;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important; /* for older WebKit */
-}
-
-.resume-biography .avatar-wrapper {
-  width: 300px;
-  height: 300px;
-}
-
-.resume-biography .avatar-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/media/raihan-1.png") center/cover no-repeat;
-  border-radius: 50%;
-  border: 5px solid rgb(31 41 55 / 0.8);
-}
-
-
-/* Hide the default “Published with Hugo Blox Builder” line */
-.powered-by.text-center a[href*="hugoblox"],
-.powered-by.text-center a[href*="hugo-blox-builder"],
-.powered-by.text-center:has(a[href*="hugoblox"]) {
+/* Less clutter: drop the "N min read" estimate and the "Read more" row
+   (the whole card title is already a link). */
+[role="article"] span.hidden.sm\:inline {
   display: none !important;
 }
-
-/* Or, if you want to hide that entire paragraph instead: */
-p.powered-by.text-center:has(a[href*="hugoblox"]) {
+[role="article"] div:has(> a.group\/link) {
   display: none !important;
 }
-
-/* Make your own copyright line stand out */
-p.powered-by.text-center {
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-align: center;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+[role="article"] .mb-3:has(> div, > time) {
+  margin-bottom: 0 !important;
 }
 
 /* Compact Featured Publications cards on the homepage */
 #papers .container {
   max-width: 72rem;
 }
-
 #papers .grid {
   gap: 1.5rem;
 }
-
-#papers h2 {
-  font-size: 1rem;
+#papers h3 {
+  font-size: 1.05rem;
   line-height: 1.35;
 }
-
-#papers .grow p {
-  font-size: 0.82rem;
-  line-height: 1.45;
+#papers [role="article"] p {
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
-
-#papers time,
-#papers .flex-none {
-  font-size: 0.78rem;
-}
-
 #papers img {
   object-fit: cover;
 }
 
-/* --- Image save/download deterrents --- */
+/* ---------- Footer ---------- */
+
+/* Hide the theme's "Made with Hugo Blox" line. */
+.powered-by.text-center:has(a[href*="hugoblox"]),
+p.powered-by:has(a[data-hbx]) {
+  display: none !important;
+}
+
+.site-footer-custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem 1rem;
+  border-top: 1px solid rgb(0 0 0 / 0.08);
+}
+.dark .site-footer-custom {
+  border-top-color: rgb(255 255 255 / 0.1);
+}
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  color: rgb(71 85 105);
+  border: 1px solid rgb(0 0 0 / 0.1);
+  transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+.dark .footer-social a {
+  color: rgb(203 213 225);
+  border-color: rgb(255 255 255 / 0.15);
+}
+.footer-social a:hover {
+  color: var(--color-primary-600);
+  border-color: var(--color-primary-600);
+  transform: translateY(-2px);
+}
+.dark .footer-social a:hover {
+  color: var(--color-primary-400);
+  border-color: var(--color-primary-400);
+}
+.footer-copyright {
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0.85;
+}
+.footer-copyright a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-copyright a:hover {
+  color: var(--color-primary-600);
+}
+.footer-copyright span {
+  margin: 0 0.35rem;
+  opacity: 0.5;
+}
+
+/* ---------- Image save deterrents ---------- */
 /* Disable dragging, selection, and the iOS/Android long-press save menu on all images */
 img {
   -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
   user-drag: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-touch-callout: none; /* disables the long-press "Save Image" menu on iOS */
-  pointer-events: auto;
+  -webkit-touch-callout: none;
+}
+
+/* ---------- Email link toast (layouts/_partials/hooks/body-end/email-protect.html) ---------- */
+.email-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  z-index: 100;
+  max-width: calc(100vw - 2rem);
+  padding: 0.65rem 1.1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: rgb(17 24 39 / 0.95);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.65rem;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 0.25);
+  opacity: 0;
+  transform: translate(-50%, 0.5rem);
+  transition: opacity 0.25s, transform 0.25s;
+  pointer-events: none;
+}
+.email-toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }

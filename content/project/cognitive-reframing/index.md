@@ -1,5 +1,6 @@
 ---
 title: "Context-Aware Cognitive Reframing for Mental Wellbeing"
+summary: "Context-aware cognitive reframing for mental wellbeing: detects moments of stress with multi-modal sensing and offers timely reframing prompts."
 date: 2025-05-01
 
 tags:

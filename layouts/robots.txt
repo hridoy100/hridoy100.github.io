@@ -1,0 +1,12 @@
+# Search engines are welcome.
+User-agent: *
+Allow: /
+
+# Opt out of AI training / bulk data-collection crawlers.
+# Note: robots.txt is a request that reputable crawlers honor; it cannot block bad actors.
+{{- range slice "GPTBot" "ChatGPT-User" "OAI-SearchBot" "CCBot" "Google-Extended" "anthropic-ai" "ClaudeBot" "Claude-Web" "PerplexityBot" "Bytespider" "Amazonbot" "Applebot-Extended" "meta-externalagent" "FacebookBot" "Diffbot" "Omgilibot" "ImagesiftBot" "cohere-ai" "Timpibot" "YouBot" }}
+User-agent: {{ . }}
+Disallow: /
+{{- end }}
+
+Sitemap: {{ "sitemap.xml" | absURL }}

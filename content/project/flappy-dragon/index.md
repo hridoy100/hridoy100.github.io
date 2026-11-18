@@ -7,12 +7,10 @@ tags:
   - First Project
 
 links:
-  - icon_pack: fab
-    icon: download
-    name: Download and Play
-    url: 'uploads/flappy-dragon.exe'
-
-
+  - type: custom
+    label: 'Download and Play'
+    icon: hero/arrow-down-tray
+    url: uploads/flappy-dragon.exe
 ---
 
 My first project written in C++ with the help of iGraphics library. Awarded with 2nd runner-up at project showcase competition, CSE Fest, BUET, 2017

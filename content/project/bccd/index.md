@@ -1,5 +1,6 @@
 ---
 title: Blood Cell Classification
+summary: "Automated blood cell detection and classification (RBC, WBC, platelets) on the BCCD dataset using YOLOv5 and Mask R-CNN."
 date: 2020-11-09
 
 tags:

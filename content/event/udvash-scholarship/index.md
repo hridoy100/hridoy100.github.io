@@ -35,10 +35,6 @@ image:
   caption: 'Receiving the Udvash merit scholarship certificate'
   focal_point: Smart
 
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
 
 slides: ""
 

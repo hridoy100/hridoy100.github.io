@@ -1,0 +1,28 @@
+{{- /* Site footer: social links, copyright with license, RSS. */ -}}
+{{- $author := site.GetPage "/authors/admin" -}}
+<div class="site-footer-custom">
+  {{- with $author.Params.profiles }}
+  <nav class="footer-social" aria-label="Social links">
+    {{- range . }}
+      {{- $link := .url -}}
+      {{- $external := hasPrefix $link "http" -}}
+      <a href="{{ $link | safeURL }}"{{ if $external }} target="_blank" rel="noopener me"{{ end }} aria-label="{{ .label | default (path.Base .icon) }}" title="{{ .label | default (path.Base .icon) }}">
+        {{ partial "functions/get_icon" (dict "name" .icon "attributes" `class="w-5 h-5"`) }}
+      </a>
+    {{- end }}
+  </nav>
+  {{- end }}
+  {{- $c := site.Params.footer.copyright -}}
+  <p class="footer-copyright">
+    {{ replace ($c.notice | default (printf "© {year} %s" site.Title)) "{year}" now.Year }}
+    {{- if $c.license.enable }}
+      {{- $code := "by" -}}
+      {{- if not $c.license.allow_commercial }}{{ $code = printf "%s-nc" $code }}{{ end -}}
+      {{- if and $c.license.allow_derivatives ($c.license.share_alike | default true) }}{{ $code = printf "%s-sa" $code }}{{ else if not $c.license.allow_derivatives }}{{ $code = printf "%s-nd" $code }}{{ end }}
+      <span aria-hidden="true">·</span>
+      <a href="https://creativecommons.org/licenses/{{ $code }}/4.0/" rel="license noopener" target="_blank">CC {{ replace $code "-" " " | upper }} 4.0</a>
+    {{- end }}
+    <span aria-hidden="true">·</span>
+    <a href="{{ "index.xml" | relURL }}">RSS</a>
+  </p>
+</div>

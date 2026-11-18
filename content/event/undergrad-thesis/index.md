@@ -35,10 +35,6 @@ image:
   caption: 'Holding the bound undergraduate thesis at the CSE department, BUET'
   focal_point: Center
 
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
 
 slides: ""
 

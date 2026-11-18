@@ -35,10 +35,6 @@ image:
   caption: 'Receiving the award at the National Science Olympiad ceremony'
   focal_point: Left
 
-url_code: ''
-url_pdf: ''
-url_slides: ''
-url_video: ''
 
 slides: ""
 

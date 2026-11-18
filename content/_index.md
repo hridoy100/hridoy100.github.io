@@ -14,12 +14,17 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ""
+      headings:
+        about: About Me
       # Show a call-to-action button under your biography? (optional)
       button:
         text: View CV
         url: https://drive.google.com/file/d/1SGuWPnwXd9jDxf1fGumMd1cwt3r36iRt/view?usp=sharing
     design:
       css_class: dark
+      avatar:
+        size: large
+        shape: circle
       background:
         color: emerald
         image:
@@ -46,6 +51,7 @@ sections:
     id: papers
     content:
       title: Featured Publications
+      count: 6
       filters:
         folders:
           - publication
@@ -60,10 +66,14 @@ sections:
       filters:
         folders:
           - project
-      count: 12
+      count: 6
+      archive:
+        enable: true
+        text: See all projects
+        link: projects/
     design:
       view: article-grid
-      columns: 4
+      columns: 3
   - block: collection
     id: talks
     content:
