@@ -1,5 +1,6 @@
 ---
 title: "Wireless Patient Health Monitoring System"
+summary: "A wireless patient monitoring device built on Arduino and ATmega32 with a pulse sensor, GSM alerts, Bluetooth, and an LCD display."
 date: 2018-01-01
 external_link: https://youtu.be/MR9hV4D6v00?si=7oSmiaZln8z6LEDb
 tags:

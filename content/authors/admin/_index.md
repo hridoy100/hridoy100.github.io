@@ -24,13 +24,11 @@ role: Graduate Teaching Assistant
 organizations:
   - name: University of Iowa – Dept. of Computer Science
     url: https://cs.uiowa.edu/
-  - name: Tekarsh / MarginEdge
-    url: https://tekarsh.com/
 
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:raihanul.hridoy100@gmail.com'
+    url: '#email'
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/hridoy100
@@ -154,7 +152,6 @@ awards:
     
 
 ---
-## About Me
   - Follow my research [Google Scholar (Citations 200+)](https://scholar.google.com/citations?user=hk_I6_IAAAAJ&hl=en)
   - Best Paper Honorable Mention at **CHI’21** [(Paper)](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445154)
   - Read my recent work [FogSense](https://hridoy100.github.io/FOGSense/)

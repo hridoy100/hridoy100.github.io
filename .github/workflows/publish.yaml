@@ -1,7 +1,8 @@
 name: Deploy website to GitHub Pages
 
 env:
-  WC_HUGO_VERSION: '0.135.0'
+  WC_HUGO_VERSION: '0.152.1'
+  NODE_VERSION: '20'
 
 on:
   # Trigger the workflow every time you push to the `main` branch
@@ -31,6 +32,13 @@ jobs:
         with:
           # Fetch history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - name: Install Tailwind CSS dependencies
+        run: npm ci
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -48,6 +56,9 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
+          # Contact email for the site's email buttons. Kept out of the public repo:
+          # set it under Settings → Secrets and variables → Actions → CONTACT_EMAIL.
+          HUGO_CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
         run: |
           echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"

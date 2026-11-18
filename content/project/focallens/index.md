@@ -1,5 +1,6 @@
 ---
 title: FocalLens - Visualizing Narratives through Focalization
+summary: "An interactive narrative visualization tool that helps writers and literary scholars analyze focalization: who sees, narrates, participates in, and observes story events."
 
 date: 2026-04-15
 # external_link: https://arxiv.org/abs/2604.14456

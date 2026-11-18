@@ -1,5 +1,6 @@
 ---
 title: Federated Gradient Inversion Attack
+summary: "Reconstructs clients' private training data from shared gradients in federated learning, based on the Deep Leakage from Gradients (DLG) attack."
 date: 2025-12-10
 
 tags:

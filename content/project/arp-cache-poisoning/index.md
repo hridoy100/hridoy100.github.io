@@ -1,5 +1,6 @@
 ---
 title: ARP Cache Poisoning
+summary: "Demonstrates ARP cache poisoning on a local network, showing how spoofed ARP messages enable man-in-the-middle attacks."
 date: 2019-09-09
 
 tags:

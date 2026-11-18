@@ -7,7 +7,6 @@ author_notes:
 - "Equal contribution"
 - "Equal contribution"
 date: "2015-09-01T00:00:00Z"
-doi: ""
 draft: true
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -34,14 +33,11 @@ weight: 100
 # links:
 # - name: ""
 #   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+links:
+  - type: pdf
+    url: http://arxiv.org/pdf/1512.04133v1
+  - type: code
+    url: https://github.com/HugoBlox/hugo-blox-builder
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

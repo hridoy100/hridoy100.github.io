@@ -38,10 +38,9 @@ image:
 #    icon_pack: fab
 #    name: Follow
 #    url: https://twitter.com/georgecushen
-url_code: ''
-url_pdf: 'https://drive.google.com/file/d/1AqM3XbrevTdevuT83s2LPIpjJO-MQiGq/view?usp=sharing'
-url_slides: ''
-url_video: ''
+links:
+  - type: pdf
+    url: https://drive.google.com/file/d/1AqM3XbrevTdevuT83s2LPIpjJO-MQiGq/view?usp=sharing
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

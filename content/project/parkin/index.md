@@ -1,5 +1,6 @@
 ---
 title: "ParkIn: A Smart Parking App"
+summary: "An Android app for finding available parking slots, pre-booking a space, and paying after parking."
 date: 2020-11-09
 external_link: https://github.com/hridoy100/parkinandroid
 tags:

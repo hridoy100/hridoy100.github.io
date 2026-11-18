@@ -1,5 +1,6 @@
 ---
 title: "Sleeper Agent: Hidden Trigger Backdoors in Neural Networks"
+summary: "A scalable clean-label data poisoning attack that implants hidden trigger backdoors into neural networks trained from scratch."
 date: 2025-10-01
 
 tags:

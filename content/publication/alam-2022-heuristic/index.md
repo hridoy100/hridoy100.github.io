@@ -21,18 +21,22 @@ weight: 10
 
 
 links:
-  - name: Conference Link
+  - type: pdf
+    url: https://drive.google.com/file/d/1zhVB0jJtCbSzIn9Y3mhmCk9pLs_esrVA/view?usp=sharing
+  - type: code
+    url: https://github.com/hridoy100/phylogenetic-tree-research
+  - type: dataset
+    url: https://github.com/hridoy100/phylogenetic-tree-research/tree/main/Datasets
+  - type: poster
+    url: https://drive.google.com/file/d/1XEVaN1Ysd7TzPVBtXhWEKPzk6MKD6Wbm/view?usp=sharing
+  - type: slides
+    url: https://drive.google.com/file/d/1ftE77ZBXF06-VmtLwwt4CJGTomhxZkUj/view?usp=sharing
+  - type: custom
+    label: 'Conference Link'
     url: https://ieeexplore.ieee.org/document/10089062
-  - name: Undergraduate Thesis
-    url: 'https://drive.google.com/file/d/1DJrtyWmpwX_Hjfec64XAwL05J-O-8GnP/view?usp=sharing'
-url_pdf: https://drive.google.com/file/d/1zhVB0jJtCbSzIn9Y3mhmCk9pLs_esrVA/view?usp=sharing
-url_code: 'https://github.com/hridoy100/phylogenetic-tree-research'
-url_dataset: 'https://github.com/hridoy100/phylogenetic-tree-research/tree/main/Datasets'
-url_poster: 'https://drive.google.com/file/d/1XEVaN1Ysd7TzPVBtXhWEKPzk6MKD6Wbm/view?usp=sharing'
-url_project: ''
-url_slides: 'https://drive.google.com/file/d/1ftE77ZBXF06-VmtLwwt4CJGTomhxZkUj/view?usp=sharing'
-url_source: ''
-url_video: ''
+  - type: custom
+    label: 'Undergraduate Thesis'
+    url: https://drive.google.com/file/d/1DJrtyWmpwX_Hjfec64XAwL05J-O-8GnP/view?usp=sharing
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:

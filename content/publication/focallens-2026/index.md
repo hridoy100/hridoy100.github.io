@@ -5,7 +5,6 @@ authors:
 - Md Dilshadur Rahman
 - Md Naimul Hoque
 date: '2026-04-15'
-doi: "10.48550/arXiv.2604.14456"
 publishDate: '2026-04-15T22:18:21Z'
 publication_types:
 - article
@@ -21,18 +20,14 @@ featured: true
 weight: 5
 
 links:
-  - name: arXiv
-    url: https://arxiv.org/abs/2604.14456
-  - name: PDF
+  - type: pdf
     url: https://arxiv.org/pdf/2604.14456
-url_pdf: https://arxiv.org/pdf/2604.14456
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+  - type: custom
+    label: 'arXiv'
+    url: https://arxiv.org/abs/2604.14456
+hugoblox:
+  ids:
+    doi: 10.48550/arXiv.2604.14456
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -59,7 +54,7 @@ abstract: >-
   how focalization can add an analytical layer for identifying narrative patterns,
   biases, inconsistencies, and literary style.
 
-summary: I am grateful and very thankful to Prof. Naimul Hoque for his guidance and support on this project. FocalLens is an interactive narrative visualization tool that uses focalization to show how different characters perceive, narrate, participate in, and observe story events.
+summary: FocalLens is an interactive narrative visualization tool that uses focalization to show how different characters perceive, narrate, participate in, and observe story events.
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

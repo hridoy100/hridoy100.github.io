@@ -1,0 +1,53 @@
+{{- /*
+  Email harvesting protection.
+
+  - The address is never in the repository: it comes from the HUGO_CONTACT_EMAIL
+    environment variable at build time (a GitHub Actions secret in production).
+  - It is never in the HTML or the rendered DOM: profile links point to `#email`.
+    The two halves (before/after the "@") are stored separately, each base64-encoded
+    and reversed, so neither a source scan nor a base64-decoding scan finds an address.
+  - It is only assembled when a person clicks or presses Enter on an email link
+    (event.isTrusted), then handed straight to the mail app and the clipboard.
+    Headless scrapers that render JavaScript still never see it in the page.
+*/ -}}
+{{- $email := getenv "HUGO_CONTACT_EMAIL" | default site.Params.contact.email -}}
+{{- $parts := split (strings.TrimSpace (string $email)) "@" -}}
+{{- if eq (len $parts) 2 -}}
+{{- $enc := slice -}}
+{{- range $parts -}}
+  {{- $rev := slice -}}
+  {{- range split (base64Encode .) "" }}{{ $rev = slice . | append $rev }}{{ end -}}
+  {{- $enc = $enc | append (delimit $rev "") -}}
+{{- end -}}
+<script>
+(function () {
+  var p = [{{ index $enc 0 }}, {{ index $enc 1 }}];
+  function dec(s) { return atob(s.split('').reverse().join('')); }
+  function toast(msg) {
+    var t = document.createElement('div');
+    t.className = 'email-toast';
+    t.setAttribute('role', 'status');
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(function () { t.classList.add('show'); }, 10);
+    setTimeout(function () { t.classList.remove('show'); setTimeout(function () { t.remove(); }, 300); }, 2600);
+  }
+  document.querySelectorAll('a[href$="#email"]').forEach(function (a) {
+    a.removeAttribute('target');
+    a.setAttribute('aria-label', 'Email');
+    a.setAttribute('title', 'Email');
+    a.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      if (!ev.isTrusted) return;
+      var e = dec(p[0]) + String.fromCharCode(64) + dec(p[1]);
+      var copied = false;
+      try {
+        if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(e); copied = true; }
+      } catch (_) {}
+      window.location.href = 'mailto:' + e;
+      toast(copied ? 'Opening your mail app. Address also copied to clipboard.' : 'Opening your mail app.');
+    });
+  });
+})();
+</script>
+{{- end -}}
